@@ -22,7 +22,7 @@ addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
 
 function addSlice() {
-    console.log("added slice")
+    console.log("Added slice")
 }
 
 function init() {
