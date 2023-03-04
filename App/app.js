@@ -11,5 +11,8 @@ defaultPie.setAttribute("width", "500px")
 defaultPie.setAttribute("height", "500px")
 divContainer.appendChild(defaultPie)
 
+let lineBreak = document.createElement("br")
+divContainer.appendChild(lineBreak)
+
 let addSliceButton = document.createElement("button")
 divContainer.appendChild(addSliceButton)
