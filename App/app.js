@@ -4,4 +4,3 @@ appTitle.appendChild(appTitleText)
 
 let divContainer = document.getElementById("containerDiv")
 divContainer.appendChild(appTitle)
-
