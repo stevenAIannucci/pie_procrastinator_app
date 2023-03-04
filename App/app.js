@@ -15,7 +15,20 @@ let lineBreak = document.createElement("br")
 divContainer.appendChild(lineBreak)
 
 let addSliceButton = document.createElement("button")
+addSliceButton.setAttribute("id", "addButton")
 addSliceButton.setAttribute("type", "button")
 let addSliceButtonText = document.createTextNode("ADD")
 addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
+
+addSlice() {
+    console.log("added slice")
+}
+
+function init() {
+    /*button clicks to add slices*/
+    let addSliceButton = document.getElementById(addButton)
+    addSliceButton.addEventListener("click", addSlice)
+}
+
+window.addEventListener("load", init, false)
