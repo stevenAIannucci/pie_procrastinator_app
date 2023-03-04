@@ -27,7 +27,7 @@ function addSlice() {
 
 function init() {
     /*button clicks to add slices*/
-    let addSliceButton = document.getElementById(addButton)
+    let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
 }
 
