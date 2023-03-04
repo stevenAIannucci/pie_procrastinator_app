@@ -21,7 +21,7 @@ let addSliceButtonText = document.createTextNode("ADD")
 addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
 
-addSlice() {
+function addSlice() {
     console.log("added slice")
 }
 
