@@ -10,3 +10,6 @@ defaultPie.setAttribute("src", "./assets/0.png")
 defaultPie.setAttribute("width", "500px")
 defaultPie.setAttribute("height", "500px")
 divContainer.appendChild(defaultPie)
+
+let addSliceButton = document.createElement("button")
+divContainer.appendChild(addSliceButton)
