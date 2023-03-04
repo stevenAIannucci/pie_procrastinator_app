@@ -1,5 +1,10 @@
+body {
+    background-color: black;
+}
+
 h1 {
-    text-align: center;  
+    text-align: center;
+    color: white;
 }
 
 img {
