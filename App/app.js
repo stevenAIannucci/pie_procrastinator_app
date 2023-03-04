@@ -7,5 +7,4 @@ divContainer.appendChild(appTitle)
 
 let defaultPie = document.createElement("img")
 defaultPie.setAttribute("src", "./assets/0.png")
-defaultPie.style.align("center")
 divContainer.appendChild(defaultPie)
