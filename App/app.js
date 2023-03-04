@@ -15,4 +15,7 @@ let lineBreak = document.createElement("br")
 divContainer.appendChild(lineBreak)
 
 let addSliceButton = document.createElement("button")
+addSliceButton.setAttribute("type", "button")
+let addSliceButtonText = document.createTextNode("ADD")
+addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
