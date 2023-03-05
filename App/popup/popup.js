@@ -8,7 +8,6 @@ function activatenewProject() {
     localStorage.removeItem("pnameOutput")
     /*validates and stores pname in localStorage*/
     let pnameInput = document.getElementById("pname").value
-    const pname = document.getElementById("pname")
     const pnameErrorDiv = document.getElementById("pnameErrorDiv")
     pnameErrorDiv.style.color = "red"
     let pnameValidateError = document.getElementById("pnameError")
@@ -32,7 +31,6 @@ function activatenewProject() {
         localStorage.setItem("pnameOutput", pnameOutput.textContent)
         /*stores taskn in localStorage*/
         let tasknInput = document.getElementById("taskn").value
-        const taskn = document.getElementById("taskn")
         /*stores daysn in localStorage*/ 
         window.close()
     }
