@@ -6,7 +6,7 @@ function activatenewProject() {
     event.preventDefault()
     /*resets values when the ok button is clicked*/
     localStorage.removeItem("outputHTML")
-    /*stores pname in localStorage*/
+    /*validates and stores pname in localStorage*/
     let pnameInput = document.getElementById("pname").value
     let pnameValidateError = document.createElement("p")
     pnameValidateError.setAttribute("id", "pnameError")
