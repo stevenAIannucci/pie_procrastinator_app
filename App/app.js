@@ -40,6 +40,8 @@ function addSlice() {
         frameImg.src = "./assets/frames/even/8/1.png"
     } else if (frameImg.src === "./assets/frames/even/8/1.png") {
         frameImg.src = "./assets/frames/even/8/2.png"
+    } else {
+        console.log("No more slices")
     }
 }
 /*initial function*/
