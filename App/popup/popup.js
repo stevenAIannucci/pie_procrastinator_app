@@ -9,7 +9,7 @@ function activatenewProject() {
     /*validates and stores pname in localStorage*/
     let pnameInput = document.getElementById("pname").value
     const pname = document.getElementById("pname")
-    const pnameError = document.getElementById("pnameErrorDiv")
+    const pnameErrorDiv = document.getElementById("pnameErrorDiv")
     let pnameValidateError = document.getElementById("pnameError")
     if (!pnameValidateError) {
         pnameValidateError = document.createElement("p")
@@ -18,13 +18,14 @@ function activatenewProject() {
         pnameValidateError.appendChild(pnameValidateErrorText)
     }
     if (pnameInput === "") {
-        if (!pnameError.parentNode.contains(pnameValidateError)) {
-            pnameError.parentNode.appendChild(pnameValidateError)
+        if (!pnameErrorDiv.parentNode.contains(pnameValidateError)) {
+            pnameErrorDiv.parentNode.appendChild(pnameValidateError)
         }
         pname.style.borderColor = "red"
+        pnameErrorDiv.textContent = pnameValidateError.textContent // Set the text content of pnameErrorDiv
     } else {
-        if (pnameError.parentNode.contains(pnameValidateError)) {
-            pnameError.parentNode.removeChild(pnameValidateError)
+        if (pnameErrorDiv.parentNode.contains(pnameValidateError)) {
+            pnameErrorDiv.parentNode.removeChild(pnameValidateError)
         }
         let pnameOutput = document.createElement("div")
         pnameOutput.textContent = pnameInput
@@ -34,7 +35,6 @@ function activatenewProject() {
         window.close()
     }
 }
-
 
 function init() {
 /*cancel project and close window*/
