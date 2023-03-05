@@ -14,7 +14,7 @@ divContainer.appendChild(defaultPie)
 let defaultGem = document.createElement("img")
 defaultGem.setAttribute("src", "./assets/gems/odd/7/7_7.png")
 defaultGem.setAttribute("class", "gems")
-divContainer.appendChild(defaultGem)
+defaultPie.appendChild(defaultGem)
 /*button to add slice*/
 let addSliceButton = document.createElement("button")
 addSliceButton.setAttribute("id", "addButton")
