@@ -15,7 +15,7 @@ function activatenewProject() {
     const pname = document.getElementById("pname")
     if (pnameInput === "") {
         pname.parentNode.appendChild(pnameValidateError)
-        pname.style.borderColor = red
+        pname.style.borderColor = "red"
     } else {
     let pnameOutput = document.createElement("div")
     pnameOutput.textContent = pnameInput
