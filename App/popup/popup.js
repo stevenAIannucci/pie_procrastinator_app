@@ -13,14 +13,16 @@ function activatenewProject() {
     const pnameValidateErrorText = document.createTextNode("You can't leave this field blank.")
     pnameValidateError.appendChild(pnameValidateErrorText)
     const pname = document.getElementById("pname")
-    pname.parentNode.appendChild(pnameValidateError)
-
+    if (pnameInput === "") {
+        pname.parentNode.appendChild(pnameValidateError)
+    } else {
     let pnameOutput = document.createElement("div")
     pnameOutput.textContent = pnameInput
     localStorage.setItem("pnameOutput", pnameOutput.textContent)
     /*stores taskn in localStorage*/
     /*stores daysn in localStorage*/ 
     window.close()
+    }
 }
 
 function init() {
