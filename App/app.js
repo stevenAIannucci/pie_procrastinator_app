@@ -37,14 +37,15 @@ divContainer.appendChild(addSliceButton)
 function addSlice() {
     const frameImg = document.getElementById("frames")
     switch (frameImg.src) {
-        case "./assets/frames/even/8/0.png":
-            frameImg.Img.src = "./assets/frames/even/8/1.png"
+        case "http://localhost:8000/assets/frames/even/8/0.png":
+            frameImg.src = "http://localhost:8000/assets/frames/even/8/1.png"
             break
-        case "./assets/frames/even/8/1.png":
-            frameImg.src = "./assets/frames/even/8/2.png"
+        case "http://localhost:8000/assets/frames/even/8/1.png":
+            frameImg.src = "http://localhost:8000/assets/frames/even/8/2.png"
             break
         default:
             console.log("No more slices can be added")
+            break
     }
 }
 /*initial function*/
