@@ -17,6 +17,10 @@ body {
     padding: 25px;
 }
 
+#pnameError {
+    color: red;
+}
+
 #taskn {
     width: 1.5em;
 }

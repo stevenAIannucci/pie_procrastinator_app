@@ -9,7 +9,7 @@ function activatenewProject() {
     /*stores pname in localStorage*/
     let pnameInput = document.getElementById("pname").value
     let pnameValidateError = document.createElement("p")
-    pnameValidateError.setAttribute("class", "pnameError")
+    pnameValidateError.setAttribute("id", "pnameError")
     const pnameValidateErrorText = document.createTextNode("You can't leave this field blank.")
     pnameValidateError.appendChild(pnameValidateErrorText)
     const pname = document.getElementById("pname")
