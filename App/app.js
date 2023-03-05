@@ -7,7 +7,7 @@ let divContainer = document.getElementById("containerDiv")
 divContainer.appendChild(appTitle)
 /*default pie frame image*/
 let defaultPie = document.createElement("img")
-defaultPie.setAttribute("src", "http://localhost:8000/assets/frames/even/8/0.png")
+defaultPie.setAttribute("src", "./assets/frames/even/8/0.png")
 defaultPie.setAttribute("id", "frames")
 divContainer.appendChild(defaultPie)
 /*default gem set image*/
@@ -25,16 +25,10 @@ divContainer.appendChild(addSliceButton)
 /*function to add slice*/
 function addSlice() {
     const frameImg = document.getElementById("frames")
-    switch (frameImg.src) {
-        case "http://localhost:8000/assets/frames/even/8/0.png":
-            frameImg.src = "http://localhost:8000/assets/frames/even/8/1.png";
-            break;
-        case "http://localhost:8000/assets/frames/even/8/1.png":
-            frameImg.src = "http://localhost:8000/assets/frames/even/8/2.png";
-            break;
-        default:
-            console.log("No more slices can be added");
-            break;
+    if (frameImg.src === "./assets/frames/even/8/0.png") {
+        frameImg.src = "http://localhost:8000/assets/frames/even/8/1.png";
+    } else {
+        console.log("No more slices can be added")
     }
 }
 /*initial function*/
