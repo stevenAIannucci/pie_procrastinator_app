@@ -7,6 +7,7 @@ let divContainer = document.getElementById("containerDiv")
 divContainer.appendChild(appTitle)
 /*childDiv*/
 let childDiv = document.createElement("div")
+childDiv.setAttribute("id", "childDiv")
 divContainer.append(childDiv)
 /*p*/
 let childDivP = document.createElement("p")
