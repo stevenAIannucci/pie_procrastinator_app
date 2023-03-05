@@ -9,6 +9,7 @@ function activatenewProject() {
     /*validates and stores pname in localStorage*/
     let pnameInput = document.getElementById("pname").value
     const pname = document.getElementById("pname")
+    const pnameError = document.getElementById("pnameErrorDiv")
     let pnameValidateError = document.getElementById("pnameError")
     if (!pnameValidateError) {
         pnameValidateError = document.createElement("p")
