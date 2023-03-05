@@ -15,8 +15,9 @@
             <div id="pnameErrorDiv"></div><br>
             <label for="taskn">Number of tasks:</label>
             <input type="text" id="taskn" name="taskn" oninput="this.value = this.value.slice(0, 1)" maxlength="1"><br><br>
+            <div id="tasknErrorDiv"></div><br>
             <label for="daysn">Days until deadline:</label>
-            <input type="text" id="daysn" name="daysn"><br><br><br>
+            <input type="text" id="daysn" name="daysn" oninput="this.value = this.value.slice(0, 1)" maxlength="1"><br><br><br>
             <button id="cancel" type="submit">Cancel</button>
             <button id="ok" type="submit">OK</button>
         </form>
