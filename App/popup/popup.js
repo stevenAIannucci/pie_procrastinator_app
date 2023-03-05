@@ -7,7 +7,7 @@ function activatenewProject() {
     let inputText = document.getElementById("pname").value
     let outputElement = document.createElement("div")
     outputElement.textContent = inputText
-    localStorage.setItem("outputHTML", outputElement.outerHTML)
+    localStorage.setItem("outputHTML", outputElement.textContent)
     window.close()
 }
 

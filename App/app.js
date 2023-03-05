@@ -9,15 +9,11 @@ divContainer.appendChild(appTitle)
 let childDiv = document.createElement("div")
 childDiv.setAttribute("id", "childDiv")
 divContainer.appendChild(childDiv)
-/*childDivP*/
-let childDivP = document.createElement("p")
-childDivP.setAttribute("id", "childDivP")
-childDiv.appendChild(childDivP)
 /*DOMContentLoaded*/
 document.addEventListener("DOMContentLoaded", function(event) {
     let outputHTML = localStorage.getItem("outputHTML")
     if (outputHTML !== null) {
-        let outputElement = document.getElementById("childDivP")
+        let outputElement = document.getElementById("childDiv")
         let outputTextNode = document.createTextNode(outputHTML)
         outputElement.appendChild(outputTextNode)
         localStorage.removeItem("outputHTML")
