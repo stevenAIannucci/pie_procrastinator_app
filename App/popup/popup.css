@@ -1,5 +1,5 @@
 body {
-    color: red;
+    color: rgb(185, 0, 0);
     text-align: center;
 }
 
@@ -14,4 +14,9 @@ body {
     border-width: 1px;
     border-radius: 5px;
     padding: 25px;
+}
+
+button {
+    background-color: grey;
+    color: lightgreen;
 }
