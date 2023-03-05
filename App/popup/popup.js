@@ -30,28 +30,9 @@ function activatenewProject() {
         pnameOutput.textContent = pnameInput
         localStorage.setItem("pnameOutput", pnameOutput.textContent)
         /*stores taskn in localStorage*/
-        let tasknInput = document.getElementById("taskn").value
-        const tasknErrorDiv = document.getElementById("tasknErrorDiv")
-        tasknErrorDiv.style.color = "red"
-        let tasknValidateError = document.getElementById("tasknError")
-        if (!tasknValidateError) {
-            tasknValidateError = document.createElement("p")
-            tasknValidateError.setAttribute("id", "tasknError")
-            const tasknValidateErrorText = document.createTextNode("*You can't leave this field blank.")
-            tasknValidateError.appendChild(tasknValidateErrorText)
-        }
-        if (tasknInput === "") {
-            if (!tasknErrorDiv.parentNode.contains(tasknValidateError)) {
-            tasknErrorDiv.textContent = tasknValidateError.textContent
-            }
-            taskn.style.borderColor = "red"
-        } else {
-            if (tasknErrorDiv.parentNode.contains(tasknValidateError)) {
-            tasknErrorDiv.parentNode.removeChild(tasknValidateError)
-            }
         /*stores daysn in localStorage*/ 
         window.close()
-    }}
+    }
 }
 
 function init() {
