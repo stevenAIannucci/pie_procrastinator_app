@@ -8,7 +8,7 @@ function activatenewProject() {
     localStorage.removeItem("outputHTML")
     /*validates and stores pname in localStorage*/
     let pnameInput = document.getElementById("pname").value
-    const pname = document.getElementById("pname")
+    const pname = document.getElementById("pnameErrorDiv")
     let pnameValidateError = document.getElementById("pnameError")
     if (!pnameValidateError) {
         pnameValidateError = document.createElement("p")
