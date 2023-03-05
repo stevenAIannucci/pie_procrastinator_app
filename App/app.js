@@ -29,6 +29,20 @@ function addSlice() {
         frameImg.src = "./assets/frames/even/8/1.png"
     } else if (frameImg.src.endsWith("/assets/frames/even/8/1.png")) {
         frameImg.src = "./assets/frames/even/8/2.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/8/2.png")) {
+        frameImg.src = "./assets/frames/even/8/3.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/8/3.png")) {
+        frameImg.src = "./assets/frames/even/8/4.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/8/4.png")) {
+        frameImg.src = "./assets/frames/even/8/5.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/8/5.png")) {
+        frameImg.src = "./assets/frames/even/8/6.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/8/6.png")) {
+        frameImg.src = "./assets/frames/even/8/7.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/8/7.png")) {
+        frameImg.src = "./assets/frames/even/8/8.png"
+    } else {
+        console.log("No more slices")
     }
 }
 /*initial function*/
