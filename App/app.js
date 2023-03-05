@@ -11,7 +11,7 @@ childDiv.setAttribute("id", "childDiv")
 divContainer.append(childDiv)
 /*p*/
 let childDivP = document.createElement("p")
-let childDivPText = document.createTextNode("Test Text")
+let childDivPText = document.createTextNode("Test Project")
 childDivP.appendChild(childDivPText)
 childDiv.appendChild(childDivP)
 /*default pie frame image*/
