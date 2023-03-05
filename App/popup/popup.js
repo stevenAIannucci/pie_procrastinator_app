@@ -8,13 +8,18 @@ function activatenewProject() {
     localStorage.removeItem("outputHTML")
     /*validates and stores pname in localStorage*/
     let pnameInput = document.getElementById("pname").value
-    let pnameValidateError = document.createElement("p")
-    pnameValidateError.setAttribute("id", "pnameError")
-    const pnameValidateErrorText = document.createTextNode("You can't leave this field blank.")
-    pnameValidateError.appendChild(pnameValidateErrorText)
     const pname = document.getElementById("pname")
+    let pnameValidateError = document.getElementById("pnameError")
+    if (!pnameValidateError) {
+        pnameValidateError = document.createElement("p")
+        pnameValidateError.setAttribute("id", "pnameError")
+        const pnameValidateErrorText = document.createTextNode("You can't leave this field blank.")
+        pnameValidateError.appendChild(pnameValidateErrorText)
+    }
     if (pnameInput === "") {
-        pname.parentNode.appendChild(pnameValidateError)
+        if (!pname.parentNode.contains(pnameValidateError)) {
+            pname.parentNode.appendChild(pnameValidateError)
+        }
         pname.style.borderColor = "red"
     } else {
         if (pname.parentNode.contains(pnameValidateError)) {
@@ -28,6 +33,7 @@ function activatenewProject() {
         window.close()
     }
 }
+
 
 function init() {
 /*cancel project and close window*/
