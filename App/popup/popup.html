@@ -13,7 +13,7 @@
             <label for="pname">Project Name:</label>
             <input type="text" id="pname" name="pname"><br><br>
             <label for="taskn">Number of tasks:</label>
-            <input type="text" id="taskn" name="taskn"><br><br>
+            <input type="text" id="taskn" name="taskn" oninput="this.value = this.value.slice(0, 1)" maxlength="1"><br><br>
             <label for="daysn">Days until deadline:</label>
             <input type="text" id="daysn" name="daysn"><br><br><br>
             <button id="cancel" type="submit">Cancel</button>
