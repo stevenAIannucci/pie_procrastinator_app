@@ -14,13 +14,14 @@ function activatenewProject() {
         pnameValidateError.appendChild(pnameValidateErrorText)
         const pname = document.getElementById("pname")
         pname.appendChild(pnameValidateError)
-    }
+    } else {
     let pnameOutput = document.createElement("div")
     pnameOutput.textContent = pnameInput
     localStorage.setItem("pnameOutput", pnameOutput.textContent)
     /*stores taskn in localStorage*/
     /*stores daysn in localStorage*/ 
     window.close()
+    }
 }
 
 function init() {
