@@ -1,3 +1,15 @@
+const images = [
+    "./assets/frames/even/8/0.png",
+    "./assets/frames/even/8/1.png",
+    "./assets/frames/even/8/2.png",
+    "./assets/frames/even/8/3.png",
+    "./assets/frames/even/8/4.png",
+    "./assets/frames/even/8/5.png",
+    "./assets/frames/even/8/6.png",
+    "./assets/frames/even/8/7.png",
+    "./assets/frames/even/8/8.png"
+]
+let currentImageIndex = 0
 /*heading for title of app*/
 let appTitle = document.createElement("h1")
 let appTitleText = document.createTextNode("Procrastination Pie")
@@ -24,7 +36,9 @@ addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
 /*function to add slice*/
 function addSlice() {
-    console.log("Added slice")
+    const currentImage = images[currentImageIndex]
+    console.log(currentImage)
+    currentImageIndex = (currentImageIndex + 1) % images.length
 }
 /*initial function*/
 function init() {
