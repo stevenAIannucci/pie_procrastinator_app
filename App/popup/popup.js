@@ -1,11 +1,8 @@
 function cancelNewProject() {
-    window.close();
+    window.close()
 }
 
 function activatenewProject() {
-    event.preventDefault()
-    let pnameInput = document.getElementById("pname").value
-    localStorage.setItem("pnameInput", pnameInput)
     window.close()
 }
 
@@ -18,4 +15,4 @@ let okButton = document.getElementById("ok")
 okButton.addEventListener("click", activatenewProject)
 }
 
-window.addEventListener("load", init, false);
+window.addEventListener("load", init, false)

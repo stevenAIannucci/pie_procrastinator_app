@@ -58,15 +58,6 @@ function addSlice() {
 }
 /*initial function*/
 function init() {
-    /*an attempt to transfer input from popup*/
-    document.addEventListener("DOMContentLoaded", function(event) {
-        let pnameText = localStorage.getItem("pnameInput")
-        if (pnameText !== null) {
-            let displayPname = document.getElementById("containerDiv")
-            displayPname.textContent = pnameText
-            localStorage.removeItem("pnameInput")
-        }
-    })
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
     let newProjectButton = document.getElementById("newProject")
     newProjectButton.addEventListener("click", openPop)
