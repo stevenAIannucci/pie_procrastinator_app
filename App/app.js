@@ -13,7 +13,7 @@ divContainer.appendChild(childDiv)
 let childDivP = document.createElement("p")
 childDivP.setAttribute("id", "childDivP")
 childDiv.appendChild(childDivP)
-/*DOMContentLoaded*/
+/*DOMContentLoaded
 document.addEventListener("DOMContentLoaded", function(event) {
     let outputHTML = localStorage.getItem("outputHTML")
     if (outputHTML !== null) {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         outputElement.appendChild(outputTextNode)
         localStorage.removeItem("outputHTML")
     }
-})
+})*/
 /*default pie frame image*/
 let defaultPie = document.createElement("img")
 defaultPie.setAttribute("src", "./assets/frames/even/8/0.png")
@@ -51,6 +51,7 @@ divContainer.appendChild(addSliceButton)
 function openPop() {
     window.open("./popup/popup.html", "Popup", "width=400, height=300")
 }
+/*set pie depending on the number input set by the user*/
 /*function to add slice*/
 function addSlice() {
     const frameImg = document.getElementById("frames")
