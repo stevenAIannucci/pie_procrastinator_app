@@ -11,8 +11,8 @@ childDiv.setAttribute("id", "childDiv")
 divContainer.appendChild(childDiv)
 /*DOMContentLoaded*/
 document.addEventListener("DOMContentLoaded", function(event) {
-    let pnameOutput = localStorage.getItem("pnameOutput")
-    if (pnameOutput !== null) {
+    let outputHTML = localStorage.getItem("pnameOutput")
+    if (outputHTML !== null) {
         let outputElement = document.getElementById("childDiv")
         let outputTextNode = document.createTextNode(outputHTML)
         outputElement.appendChild(outputTextNode)
