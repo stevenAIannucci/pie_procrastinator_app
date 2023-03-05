@@ -1,5 +1,5 @@
 body {
-    color: rgb(185, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -9,7 +9,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: silver;
+    background-color: rgb(255, 0, 0);
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
