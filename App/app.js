@@ -31,7 +31,7 @@ addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
 /*function to activate popup window*/
 function openPop() {
-    window.open("popup.html", "Popup", "width=400, height=300")
+    window.open("./popup/popup.html", "Popup", "width=400, height=300")
 }
 /*function to add slice*/
 function addSlice() {
