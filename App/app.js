@@ -58,6 +58,7 @@ function addSlice() {
 }
 /*initial function*/
 function init() {
+    /*an attempt to transfer input from popup*/
     document.addEventListener("DOMContentLoaded", function(event) {
         let pnameText = localStorage.getItem("pnameInput")
         if (pnameText !== null) {
