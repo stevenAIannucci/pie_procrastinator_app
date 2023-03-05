@@ -7,6 +7,10 @@ h1 {
     color: white;
 }
 
+p {
+    font-size: 40px;
+}
+
 #childDiv {
     text-align: center;
     color: red;
