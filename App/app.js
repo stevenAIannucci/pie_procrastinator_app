@@ -44,10 +44,6 @@ function addSlice() {
     } else {
         console.log("No more slices")
     }
-
-    if (frameImg.src.endsWith("/assets/frames/even/8/8.png")) {
-        alert("Congratulations!")
-    }
 }
 /*initial function*/
 function init() {
