@@ -13,7 +13,7 @@ divContainer.appendChild(childDiv)
 let childDivP = document.createElement("p")
 childDivP.setAttribute("id", "childDivP")
 childDiv.appendChild(childDivP)
-/*DOMContentLoaded
+/*DOMContentLoaded*/
 document.addEventListener("DOMContentLoaded", function(event) {
     let outputHTML = localStorage.getItem("outputHTML")
     if (outputHTML !== null) {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         outputElement.appendChild(outputTextNode)
         localStorage.removeItem("outputHTML")
     }
-})*/
+})
 /*default pie frame image*/
 let defaultPie = document.createElement("img")
 defaultPie.setAttribute("src", "./assets/frames/even/8/0.png")
@@ -52,12 +52,6 @@ function openPop() {
     window.open("./popup/popup.html", "Popup", "width=400, height=300")
 }
 /*set pie depending on the number input set by the user*/
-function setPie() {
-    const frameImg = document.getElementById("frames")
-    if (openingPrompt === 5) {
-        frameImg.src = "./assets/frames/odd/5/0.png"
-    }
-}
 /*function to add slice*/
 function addSlice() {
     const frameImg = document.getElementById("frames")
@@ -84,17 +78,6 @@ function addSlice() {
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
-    var openingPrompt = prompt("How many tasks make up the project: ")
-    if (openingPrompt !== null) {
-        if (openingPrompt >= 1 && openingPrompt <= 8) {
-            setPie()
-        } else {
-            console.log("Invalid input")
-        }
-    } else {
-        console.log("Invalid input")
-    }
-    /*new project popup*/
     let newProjectButton = document.getElementById("newProject")
     newProjectButton.addEventListener("click", openPop)
     /*button clicks to add slices*/

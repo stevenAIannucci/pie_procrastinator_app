@@ -3,11 +3,11 @@ function cancelNewProject() {
 }
 
 function activatenewProject() {
-    /*event.preventDefault()
+    event.preventDefault()
     let inputText = document.getElementById("pname").value
     let outputElement = document.createElement("div")
     outputElement.textContent = inputText
-    localStorage.setItem("outputHTML", outputElement.outerHTML)*/
+    localStorage.setItem("outputHTML", outputElement.outerHTML)
     window.close()
 }
 
