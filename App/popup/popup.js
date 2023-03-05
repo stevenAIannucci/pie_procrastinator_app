@@ -3,6 +3,9 @@ function cancelNewProject() {
 }
 
 function activatenewProject() {
+    event.preventDefault()
+    let pnameInput = document.getElementById("pname").value
+    localStorage.setItem("pnameInput", pnameInput)
     window.close()
 }
 
