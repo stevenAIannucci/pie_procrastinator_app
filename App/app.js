@@ -38,8 +38,9 @@ function addSlice() {
     const frameImg = document.getElementById("frames")
     if (frameImg.src = "./assets/frames/even/8/0.png") {
         frameImg.src = "./assets/frames/even/8/1.png"
-    } else
+    } else if (frameImg.src != "./assets/frames/even/1/0.png") {
     console.log("No more slices can be added")
+    }
 }
 /*initial function*/
 function init() {
