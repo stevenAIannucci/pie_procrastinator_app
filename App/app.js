@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let outputTextNode = document.createTextNode(outputHTML)
         outputElement.appendChild(outputTextNode)
         localStorage.removeItem("outputHTML")
-        this.location.reload()
     }
 })
 /*default pie frame image*/
