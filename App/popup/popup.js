@@ -18,13 +18,13 @@ function activatenewProject() {
         if (pname.hasChildNodes()) {
         pname.removeChild(pnameValidateError)
         }
-    }
-    let pnameOutput = document.createElement("div")
-    pnameOutput.textContent = pnameInput
-    localStorage.setItem("pnameOutput", pnameOutput.textContent)
+        let pnameOutput = document.createElement("div")
+        pnameOutput.textContent = pnameInput
+        localStorage.setItem("pnameOutput", pnameOutput.textContent)
     /*stores taskn in localStorage*/
     /*stores daysn in localStorage*/ 
-    window.close()
+        window.close()
+    }
 }
 
 function init() {
