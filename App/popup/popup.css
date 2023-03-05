@@ -1,4 +1,10 @@
+body {
+    color: red;
+    text-align: center;
+}
+
 #popupContainer {
+    display: block;
     position: fixed;
     top: 50%;
     left: 50%;
