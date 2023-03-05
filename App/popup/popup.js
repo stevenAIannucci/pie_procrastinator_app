@@ -4,6 +4,7 @@ function cancelNewProject() {
 
 function activatenewProject() {
     event.preventDefault()
+    localStorage.removeItem("outputHTML")
     let inputText = document.getElementById("pname").value
     let outputElement = document.createElement("div")
     outputElement.textContent = inputText
