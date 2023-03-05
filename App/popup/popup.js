@@ -5,7 +5,7 @@ function cancelNewProject() {
 function activatenewProject() {
     event.preventDefault()
     let inputText = document.getElementById("pname").value
-    let outputElement = document.createElememt("div")
+    let outputElement = document.createElement("div")
     outputElement.textContent = inputText
     localStorage.setItem("outputHTML", outputElement.outerHTML)
     window.close()
