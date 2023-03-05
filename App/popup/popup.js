@@ -10,12 +10,12 @@ function activatenewProject() {
     let pnameInput = document.getElementById("pname").value
     const pname = document.getElementById("pname")
     const pnameErrorDiv = document.getElementById("pnameErrorDiv")
+    pnameErrorDiv.style.color = "red"
     let pnameValidateError = document.getElementById("pnameError")
     if (!pnameValidateError) {
         pnameValidateError = document.createElement("p")
         pnameValidateError.setAttribute("id", "pnameError")
-        let pnameValidateErrorText = document.createTextNode("You can't leave this field blank.")
-        pnameValidateErrorText.style.color = "red"
+        const pnameValidateErrorText = document.createTextNode("*You can't leave this field blank.")
         pnameValidateError.appendChild(pnameValidateErrorText)
     }
     if (pnameInput === "") {
