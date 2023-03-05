@@ -14,7 +14,6 @@ h1 {
     margin-right: auto;
     width: 500px;
     height: 500px;
-    z-index: 1;
 }
 
 .gems {
@@ -24,7 +23,6 @@ h1 {
     margin-right: auto;
     width: 500px;
     height: 500px;
-    z-index: 2;
 }
 
 button {
