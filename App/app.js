@@ -25,7 +25,7 @@ divContainer.appendChild(addSliceButton)
 /*function to add slice*/
 function addSlice() {
     const frameImg = document.getElementById("frames")
-    if (frameImg.src === "./assets/frames/even/8/0.png") {
+    if (frameImg.src.endsWith === "/assets/frames/even/8/0.png") {
         frameImg.src = "./assets/frames/even/8/1.png";
     } else {
         console.log("No more slices can be added")
