@@ -14,14 +14,17 @@ h1 {
     margin-right: auto;
     width: 500px;
     height: 500px;
+    z-index: 1;
 }
 
 .gems {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
     width: 500px;
     height: 500px;
+    z-index: 2;
 }
 
 button {
