@@ -20,8 +20,10 @@ h1 {
 .gems {
     display: block;
     position: absolute;
+    /*65*/
     top: 65px;
-    right: 230px;
+    /*230*/
+    right: 710px;
     width: 500px;
     height: 500px;
     z-index: 2;
