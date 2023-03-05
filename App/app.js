@@ -47,6 +47,7 @@ function addSlice() {
 }
 /*initial function*/
 function init() {
+    /*prompt the user for a task name*/
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
