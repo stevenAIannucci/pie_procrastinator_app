@@ -19,10 +19,9 @@ function activatenewProject() {
     }
     if (pnameInput === "") {
         if (!pnameErrorDiv.parentNode.contains(pnameValidateError)) {
-            pnameErrorDiv.parentNode.appendChild(pnameValidateError)
+            pnameErrorDiv.textContent = pnameValidateError.textContent
         }
         pname.style.borderColor = "red"
-        pnameErrorDiv.textContent = pnameValidateError.textContent // Set the text content of pnameErrorDiv
     } else {
         if (pnameErrorDiv.parentNode.contains(pnameValidateError)) {
             pnameErrorDiv.parentNode.removeChild(pnameValidateError)
