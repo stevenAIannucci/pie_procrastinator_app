@@ -5,7 +5,7 @@ function cancelNewProject() {
 function activatenewProject() {
     event.preventDefault()
     /*resets values when the ok button is clicked*/
-    localStorage.removeItem("outputHTML")
+    localStorage.removeItem("pnameOutput")
     /*validates and stores pname in localStorage*/
     let pnameInput = document.getElementById("pname").value
     const pname = document.getElementById("pname")
