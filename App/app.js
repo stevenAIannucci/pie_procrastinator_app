@@ -38,8 +38,8 @@ function addSlice() {
     const frameImg = document.getElementById("frames")
     if (frameImg.src === "./assets/frames/even/8/0.png") {
         frameImg.src = "./assets/frames/even/8/1.png"
-    } else {
-        console.log("No more slices")
+    } else if (frameImg.src === "./assets/frames/even/8/1.png") {
+        frameImg.src = "./assets/frames/even/8/2.png"
     }
 }
 /*initial function*/
