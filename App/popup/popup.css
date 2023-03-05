@@ -18,7 +18,10 @@ body {
 }
 
 #taskn {
-    font-size: 20px;
+    width: 1.5em;
+}
+
+#daysn {
     width: 1.5em;
 }
 
