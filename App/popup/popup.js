@@ -4,11 +4,15 @@ function cancelNewProject() {
 
 function activatenewProject() {
     event.preventDefault()
+    /*resets values when the ok button is clicked*/
     localStorage.removeItem("outputHTML")
-    let inputText = document.getElementById("pname").value
-    let outputElement = document.createElement("div")
-    outputElement.textContent = inputText
-    localStorage.setItem("outputHTML", outputElement.textContent)
+    /*stores pname in localStorage*/
+    let pnameInput = document.getElementById("pname").value
+    let pnameOutput = document.createElement("div")
+    pnameOutput.textContent = pnameInput
+    localStorage.setItem("pnameOutput", pnameOutput.textContent)
+    /*stores taskn in localStorage*/
+    /*stores daysn in localStorage*/ 
     window.close()
 }
 
