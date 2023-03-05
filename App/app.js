@@ -9,7 +9,6 @@ const images = [
     "./assets/frames/even/8/7.png",
     "./assets/frames/even/8/8.png"
 ]
-let currentImageIndex = 0
 /*heading for title of app*/
 let appTitle = document.createElement("h1")
 let appTitleText = document.createTextNode("Procrastination Pie")
@@ -35,16 +34,14 @@ let addSliceButtonText = document.createTextNode("ADD")
 addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
 /*function to add slice*/
-
+function addSlice() {
+    console.log("Added slice")
+}
 /*initial function*/
 function init() {
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
-    addSliceButton.addEventListener("click", function() {
-        const currentImage = images[currentImageIndex]
-        console.log(currentImage)
-        currentImageIndex = (currentImageIndex + 1) % images.length
-    })
+    addSliceButton.addEventListener("click", addSlice)
 }
 
 window.addEventListener("load", init, false)
