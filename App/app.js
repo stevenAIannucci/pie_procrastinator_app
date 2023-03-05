@@ -1,14 +1,3 @@
-const images = [
-    "./assets/frames/even/8/0.png",
-    "./assets/frames/even/8/1.png",
-    "./assets/frames/even/8/2.png",
-    "./assets/frames/even/8/3.png",
-    "./assets/frames/even/8/4.png",
-    "./assets/frames/even/8/5.png",
-    "./assets/frames/even/8/6.png",
-    "./assets/frames/even/8/7.png",
-    "./assets/frames/even/8/8.png"
-]
 /*heading for title of app*/
 let appTitle = document.createElement("h1")
 let appTitleText = document.createTextNode("Procrastination Pie")
@@ -18,7 +7,7 @@ let divContainer = document.getElementById("containerDiv")
 divContainer.appendChild(appTitle)
 /*default pie frame image*/
 let defaultPie = document.createElement("img")
-defaultPie.setAttribute("src", "./assets/frames/even/8/0.png")
+defaultPie.setAttribute("src", "http://localhost:8000/assets/frames/even/8/0.png")
 defaultPie.setAttribute("id", "frames")
 divContainer.appendChild(defaultPie)
 /*default gem set image*/
