@@ -17,6 +17,10 @@ body {
     padding: 25px;
 }
 
+#pname {
+    border-style: black;
+}
+
 #pnameError {
     color: red;
 }
