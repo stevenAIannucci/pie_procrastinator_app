@@ -9,8 +9,6 @@ divContainer.appendChild(appTitle)
 let defaultPie = document.createElement("img")
 defaultPie.setAttribute("src", "./assets/frames/odd/1/0.png")
 defaultPie.setAttribute("class", "frames")
-defaultPie.setAttribute("width", "500px")
-defaultPie.setAttribute("height", "500px")
 divContainer.appendChild(defaultPie)
 /*default gem set image*/
 let defaultGem = document.createElement("img")
