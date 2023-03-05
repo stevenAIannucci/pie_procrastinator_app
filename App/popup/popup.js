@@ -18,13 +18,13 @@ function activatenewProject() {
         pnameValidateError.appendChild(pnameValidateErrorText)
     }
     if (pnameInput === "") {
-        if (!pname.parentNode.contains(pnameValidateError)) {
-            pname.parentNode.appendChild(pnameValidateError)
+        if (!pnameError.parentNode.contains(pnameValidateError)) {
+            pnameError.parentNode.appendChild(pnameValidateError)
         }
         pname.style.borderColor = "red"
     } else {
-        if (pname.parentNode.contains(pnameValidateError)) {
-            pname.parentNode.removeChild(pnameValidateError)
+        if (pnameError.parentNode.contains(pnameValidateError)) {
+            pnameError.parentNode.removeChild(pnameValidateError)
         }
         let pnameOutput = document.createElement("div")
         pnameOutput.textContent = pnameInput
