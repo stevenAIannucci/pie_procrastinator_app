@@ -5,6 +5,14 @@ appTitle.appendChild(appTitleText)
 /*div*/
 let divContainer = document.getElementById("containerDiv")
 divContainer.appendChild(appTitle)
+/*childDiv*/
+let childDiv = document.createElement("div")
+divContainer.append(childDiv)
+/*p*/
+let childDivP = document.createElement("p")
+let childDivPText = document.createTextNode("Test Text")
+childDivP.appendChild(childDivPText)
+childDiv.appendChild(childDivP)
 /*default pie frame image*/
 let defaultPie = document.createElement("img")
 defaultPie.setAttribute("src", "./assets/frames/even/8/0.png")
