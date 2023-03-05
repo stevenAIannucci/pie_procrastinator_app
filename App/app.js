@@ -61,6 +61,15 @@ function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
     let newProjectButton = document.getElementById("newProject")
     newProjectButton.addEventListener("click", openPop)
+    
+    document.addEventListener("DOMContentLoaded", function(event) {
+        let pnameText = localStorage.getItem("pnameInput")
+        if (pnameText !== null) {
+            let displayPname = document.getElementById("containerDiv")
+            displayPname.textContent = pnameText
+            localStorage.removeItem("pnameInput")
+        }
+    })
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
