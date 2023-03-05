@@ -10,10 +10,15 @@ let childDiv = document.createElement("div")
 childDiv.setAttribute("id", "childDiv")
 divContainer.append(childDiv)
 /*p*/
-let childDivP = document.createElement("p")
-let childDivPText = document.createTextNode("Test Project")
-childDivP.appendChild(childDivPText)
-childDiv.appendChild(childDivP)
+document.addEventListener("DOMContentLoaded", function(event) {
+    let outputHTML = localStorage.getItem("outputHTML")
+    if (outputHTML !== null) {
+        let outputElement = document.getElementById("childDiv")
+        let outputTextNode = document.createTextNode(outputHTML)
+        outputElement.appendChild(outputTextNode)
+        localStorage.removeItem("outputHTML")
+    }
+})
 /*default pie frame image*/
 let defaultPie = document.createElement("img")
 defaultPie.setAttribute("src", "./assets/frames/even/8/0.png")
