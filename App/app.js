@@ -5,12 +5,13 @@ appTitle.appendChild(appTitleText)
 /*div*/
 let divContainer = document.getElementById("containerDiv")
 divContainer.appendChild(appTitle)
-/*default pie image*/
+/*default pie frame image*/
 let defaultPie = document.createElement("img")
-defaultPie.setAttribute("src", "./assets/0.png")
+defaultPie.setAttribute("src", "./assets/frames/1/0.png")
 defaultPie.setAttribute("width", "500px")
 defaultPie.setAttribute("height", "500px")
 divContainer.appendChild(defaultPie)
+/*default gem set image*/
 /*button to add slice*/
 let addSliceButton = document.createElement("button")
 addSliceButton.setAttribute("id", "addButton")
