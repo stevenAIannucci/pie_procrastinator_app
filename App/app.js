@@ -78,6 +78,7 @@ function addSlice() {
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
+    prompt("How many tasks make up the project: ")
     let newProjectButton = document.getElementById("newProject")
     newProjectButton.addEventListener("click", openPop)
     /*button clicks to add slices*/
