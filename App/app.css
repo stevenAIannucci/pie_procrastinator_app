@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: blue;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
     display: block;
     position: fixed;
     /*65*/
-    top: 50%;
+    top: 34%;
     /*right: 710*/
     left: 50%;
     transform: translate(-50%, -50%);
