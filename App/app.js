@@ -26,7 +26,7 @@ divContainer.appendChild(newProjectButton)
 let addSliceButton = document.createElement("button")
 addSliceButton.setAttribute("id", "addButton")
 addSliceButton.setAttribute("type", "button")
-let addSliceButtonText = document.createTextNode("ADD")
+let addSliceButtonText = document.createTextNode("Add Slice")
 addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
 /*function to activate popup window*/
