@@ -7,6 +7,11 @@ h1 {
     color: white;
 }
 
+#childDiv {
+    text-align: center;
+    color: red;
+}
+
 #frames {
     display: block;
     position: relative;
