@@ -44,7 +44,7 @@ addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
 /*function to activate popup window*/
 function openPop() {
-    window.open("./popup/popup.html", "Popup", "width=400, height=300")
+    window.open("./popup/popup.html", "Popup", "width=400, height=400")
 }
 /*set pie depending on the number input set by the user*/
 /*function to add slice*/
