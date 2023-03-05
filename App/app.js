@@ -84,7 +84,7 @@ function addSlice() {
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
-    const openingPrompt = prompt("How many tasks make up the project: ")
+    var openingPrompt = prompt("How many tasks make up the project: ")
     if (openingPrompt !== null) {
         if (openingPrompt >= 1 && openingPrompt <= 8) {
             setPie()
