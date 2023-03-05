@@ -35,16 +35,16 @@ let addSliceButtonText = document.createTextNode("ADD")
 addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
 /*function to add slice*/
-function addSlice() {
-    const currentImage = images[currentImageIndex]
-    console.log(currentImage)
-    currentImageIndex = (currentImageIndex + 1) % images.length
-}
+
 /*initial function*/
 function init() {
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
-    addSliceButton.addEventListener("click", addSlice)
+    addSliceButton.addEventListener("click", function() {
+        const currentImage = images[currentImageIndex]
+        console.log(currentImage)
+        currentImageIndex = (currentImageIndex + 1) % images.length
+    })
 }
 
 window.addEventListener("load", init, false)
