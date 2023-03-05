@@ -17,12 +17,15 @@ function activatenewProject() {
         pname.parentNode.appendChild(pnameValidateError)
         pname.style.borderColor = "red"
     } else {
-    let pnameOutput = document.createElement("div")
-    pnameOutput.textContent = pnameInput
-    localStorage.setItem("pnameOutput", pnameOutput.textContent)
-    /*stores taskn in localStorage*/
-    /*stores daysn in localStorage*/ 
-    window.close()
+        if (pname.parentNode.contains(pnameValidateError)) {
+            pname.parentNode.removeChild(pnameValidateError)
+        }
+        let pnameOutput = document.createElement("div")
+        pnameOutput.textContent = pnameInput
+        localStorage.setItem("pnameOutput", pnameOutput.textContent)
+        /*stores taskn in localStorage*/
+        /*stores daysn in localStorage*/ 
+        window.close()
     }
 }
 
