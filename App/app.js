@@ -7,7 +7,7 @@ let divContainer = document.getElementById("containerDiv")
 divContainer.appendChild(appTitle)
 /*default pie frame image*/
 let defaultPie = document.createElement("img")
-defaultPie.setAttribute("src", "./assets/frames/1/0.png")
+defaultPie.setAttribute("src", "./assets/frames/odd/1/0.png")
 defaultPie.setAttribute("width", "500px")
 defaultPie.setAttribute("height", "500px")
 divContainer.appendChild(defaultPie)
