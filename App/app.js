@@ -12,6 +12,9 @@ defaultPie.setAttribute("width", "500px")
 defaultPie.setAttribute("height", "500px")
 divContainer.appendChild(defaultPie)
 /*default gem set image*/
+let defaultGem = document.createElement("img")
+defaultGem.setAttribute("src", "./assets/gems/odd/7/7_7.png")
+divContainer.appendChild(defaultGem)
 /*button to add slice*/
 let addSliceButton = document.createElement("button")
 addSliceButton.setAttribute("id", "addButton")
