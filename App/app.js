@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let outputElement = document.getElementById("childDiv")
         let outputTextNode = document.createTextNode(outputHTML)
         outputElement.appendChild(outputTextNode)
-        localStorage.removeItem("outputHTML")
     }
 })
 /*default pie frame image*/
@@ -46,6 +45,7 @@ divContainer.appendChild(addSliceButton)
 /*function to activate popup window*/
 function openPop() {
     window.open("./popup/popup.html", "Popup", "width=400, height=300")
+    localStorage.removeItem("outputHTML")
 }
 /*set pie depending on the number input set by the user*/
 /*function to add slice*/
