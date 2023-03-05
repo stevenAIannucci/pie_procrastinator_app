@@ -30,7 +30,7 @@ function activatenewProject() {
         pnameOutput.textContent = pnameInput
         localStorage.setItem("pnameOutput", pnameOutput.textContent)
         /*stores taskn in localStorage*/
-        /*stores daysn in localStorage*/ 
+        /*stores daysn in localStorage*/
         window.close()
     }
 }
