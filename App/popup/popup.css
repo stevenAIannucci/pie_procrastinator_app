@@ -22,10 +22,6 @@ body {
     border-width: 1px;
 }
 
-#pnameError {
-    color: red;
-}
-
 #taskn {
     width: 1.5em;
 }
