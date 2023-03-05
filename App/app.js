@@ -8,12 +8,14 @@ divContainer.appendChild(appTitle)
 /*default pie frame image*/
 let defaultPie = document.createElement("img")
 defaultPie.setAttribute("src", "./assets/frames/odd/1/0.png")
+defaultPie.setAttribute("class", "frames")
 defaultPie.setAttribute("width", "500px")
 defaultPie.setAttribute("height", "500px")
 divContainer.appendChild(defaultPie)
 /*default gem set image*/
 let defaultGem = document.createElement("img")
 defaultGem.setAttribute("src", "./assets/gems/odd/7/7_7.png")
+defaultGem.setAttribute("class", "gems")
 divContainer.appendChild(defaultGem)
 /*button to add slice*/
 let addSliceButton = document.createElement("button")
