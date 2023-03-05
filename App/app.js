@@ -19,7 +19,7 @@ divContainer.appendChild(appTitle)
 /*default pie frame image*/
 let defaultPie = document.createElement("img")
 defaultPie.setAttribute("src", "./assets/frames/odd/1/0.png")
-defaultPie.setAttribute("class", "frames")
+defaultPie.setAttribute("id", "frames")
 divContainer.appendChild(defaultPie)
 /*default gem set image*/
 let defaultGem = document.createElement("img")
@@ -35,7 +35,8 @@ addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
 /*function to add slice*/
 function addSlice() {
-    console.log("Added slice")
+    const frameImg = document.getElementById("frames")
+    frameImg.src = "./assets/frames/even/8/1.png"
 }
 /*initial function*/
 function init() {
