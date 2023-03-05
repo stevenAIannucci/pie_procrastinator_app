@@ -31,6 +31,8 @@ function activatenewProject() {
         pnameOutput.textContent = pnameInput
         localStorage.setItem("pnameOutput", pnameOutput.textContent)
         /*stores taskn in localStorage*/
+        let tasknInput = document.getElementById("taskn").value
+        const taskn = document.getElementById("taskn")
         /*stores daysn in localStorage*/ 
         window.close()
     }
