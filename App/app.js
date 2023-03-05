@@ -13,6 +13,15 @@ divContainer.appendChild(childDiv)
 let childDivP = document.createElement("p")
 childDivP.setAttribute("id", "childDivP")
 childDiv.appendChild(childDivP)
+document.addEventListener("DOMContentLoaded", function(event) {
+    let outputHTML = localStorage.getItem("outputHTML")
+    if (outputHTML !== null) {
+        let outputElement = document.getElementById("childDivP")
+        let outputTextNode = document.createTextNode(outputHTML)
+        outputElement.appendChild(outputTextNode)
+        localStorage.removeItem("outputHTML")
+    }
+})
 /*default pie frame image*/
 let defaultPie = document.createElement("img")
 defaultPie.setAttribute("src", "./assets/frames/even/8/0.png")
@@ -66,15 +75,6 @@ function addSlice() {
 }
 /*initial function*/
 function init() {
-    document.addEventListener("DOMContentLoaded", function(event) {
-        let outputHTML = localStorage.getItem("outputHTML")
-        if (outputHTML !== null) {
-            let outputElement = document.getElementById("childDivP")
-            let outputTextNode = document.createTextNode(outputHTML)
-            outputElement.appendChild(outputTextNode)
-            localStorage.removeItem("outputHTML")
-        }
-    })
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
     let newProjectButton = document.getElementById("newProject")
     newProjectButton.addEventListener("click", openPop)
