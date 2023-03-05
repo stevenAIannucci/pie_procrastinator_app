@@ -9,17 +9,15 @@ function activatenewProject() {
     /*stores pname in localStorage*/
     let pnameInput = document.getElementById("pname").value
     let pnameValidateError = document.createElement("p")
-    if (pnameInput === null) {
+    if (pnameInput === "") {
         const pnameValidateErrorText = document.createTextNode("You can't leave this field blank.")
         pnameValidateError.appendChild(pnameValidateErrorText)
         const pname = document.getElementById("pname")
         pname.appendChild(pnameValidateError)
-    } else {
-        pname.removeChild(pnameValidateError)
-        let pnameOutput = document.createElement("div")
-        pnameOutput.textContent = pnameInput
-        localStorage.setItem("pnameOutput", pnameOutput.textContent)
     }
+    let pnameOutput = document.createElement("div")
+    pnameOutput.textContent = pnameInput
+    localStorage.setItem("pnameOutput", pnameOutput.textContent)
     /*stores taskn in localStorage*/
     /*stores daysn in localStorage*/ 
     window.close()
