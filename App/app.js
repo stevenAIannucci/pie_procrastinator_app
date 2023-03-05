@@ -19,7 +19,7 @@ divContainer.appendChild(defaultGem)
 let newProjectButton = document.createElement("button")
 newProjectButton.setAttribute("id", "newProject")
 newProjectButton.setAttribute("type", "button")
-let newProjectButtonText = documement.createTextNode("New Project")
+let newProjectButtonText = document.createTextNode("New Project")
 newProjectButton.appendChild(newProjectButtonText)
 divContainer.appendChild(newProjectButton)
 /*button to add slice*/
