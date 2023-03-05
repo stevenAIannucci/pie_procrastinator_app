@@ -13,9 +13,8 @@ function activatenewProject() {
     let pnameValidateError = document.getElementById("pnameError")
     if (!pnameValidateError) {
         pnameValidateError = document.createElement("p")
-        // pnameValidateError.setAttribute("id", "pnameError")
+        pnameValidateError.setAttribute("id", "pnameError")
         const pnameValidateErrorText = document.createTextNode("You can't leave this field blank.")
-        pnameValidateErrorText.setAttribute("id", "pnameError")
         pnameValidateError.appendChild(pnameValidateErrorText)
     }
     if (pnameInput === "") {
