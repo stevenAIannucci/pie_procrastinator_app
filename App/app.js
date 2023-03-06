@@ -387,14 +387,12 @@ task8Check.setAttribute("id", "task8Check")
 task8Check.setAttribute("name", "task8Check")
 /*if statement determines how many tasks are appended to the tasklistDiv*/
 if (taskNumber === 1) {
-    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
     appendLineBreak(tasklistDiv)
     tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 2) {
-    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(taskListDiv)
@@ -404,7 +402,6 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 3) {
-    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
@@ -417,7 +414,6 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 4) {
-    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
@@ -433,7 +429,6 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 5) {
-    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
@@ -452,7 +447,6 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 6) {
-    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
@@ -474,7 +468,6 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 7) {
-    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
@@ -499,7 +492,6 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 8) {
-    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
@@ -535,7 +527,7 @@ function onTask1Checked () {
         tasklistDiv.removeChild(task1Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            tasklistDiv.appendChild(defaultTasklist)
+            defaultTasklist.style.visibility = "visible"
         }
     }
 }
