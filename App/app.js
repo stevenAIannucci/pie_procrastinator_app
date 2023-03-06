@@ -305,7 +305,10 @@ let task2 = document.createElement("input")
 task2.setAttribute("type", "text")
 task2.setAttribute("id", "task2")
 task2.setAttribute("name", "task2")
-
+let task2Check = document.createElement("input")
+task2Check.setAttribute("type", "checkbox")
+task2Check.setAttribute("id", "task2Check")
+task2Check.setAttribute("name", "task2Check")
 let task3 = document.createElement("input")
 task3.setAttribute("type", "text")
 task3.setAttribute("id", "task3")
@@ -339,7 +342,12 @@ task8.setAttribute("name", "task8")
 if (taskNumber === 1) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
-} 
+} else if (taskNumber === 2) {
+    tasklistDiv.appendChild(task1)
+    tasklistDiv.appendChild(task1Check)
+    tasklistDiv.appendChild(task2)
+    tasklistDiv.appendChild(task2Check)
+}
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
