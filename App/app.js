@@ -47,6 +47,8 @@ let defaultTasklist = document.createElement("p")
 let defaultTasklistText = document.createTextNode("There are no tasks that need to be done.")
 defaultTasklist.appendChild(defaultTasklistText)
 tasklistDiv.appendChild(defaultTasklist)
+/*seperate tasklist and buttons used for testing*/
+appendLineBreak(divContainer)
 /*button to start new project*/
 let newProjectButton = document.createElement("button")
 newProjectButton.setAttribute("id", "newProject")
@@ -370,6 +372,8 @@ if (taskNumber === 1) {
     tasklistDiv.appendChild(task3)
     tasklistDiv.appendChild(task3Check)
 }
+appendLineBreak(tasklistDiv)
+appendLineBreak(tasklistDiv)
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
