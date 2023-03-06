@@ -63,6 +63,7 @@ tasklistDiv.setAttribute("id", "tasklistDiv")
 tasklistContainer.appendChild(tasklistDiv)
 /*default text in the case of no tasks in tasklistDiv*/
 let defaultTasklist = document.createElement("p")
+defaultTasklist.style.visibility = "hidden"
 let defaultTasklistText = document.createTextNode("There are no tasks that need to be done.")
 defaultTasklist.appendChild(defaultTasklistText)
 tasklistDiv.appendChild(defaultTasklist)
