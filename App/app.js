@@ -534,7 +534,7 @@ const task8Checked = document.getElementById("task8Check")
 function onTask1Checked () {
     if (task1Check.checked === true) {
         tasklistDiv.removeChild(task1);
-        tasklistDiv.removeChild(document.getElementById("task1Check"))
+        tasklistDiv.removeChild(task1Check)
         addSlice()
     }
 }
@@ -549,6 +549,7 @@ function init() {
     /*change event fires when task1Check is checked*/
     let task1Check = document.getElementById("task1Check")
     task1Check.addEventListener("change", onTask1Checked)
+    /*change event fires when task2Check is checked*/
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
