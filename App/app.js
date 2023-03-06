@@ -628,6 +628,10 @@ function onSaveTasklist() {
     localStorage.setItem("currentTask7Input", task7.value)
     localStorage.setItem("currentTask8Input", task8.value)
 }
+/*when there are no more tasks in tasklistDiv*/
+if (!tasklistDiv.hasChildNodes()) {
+    tasklistDiv.appendChild(defaultTasklist)
+}
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
