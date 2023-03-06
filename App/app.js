@@ -28,6 +28,8 @@ let defaultGem = document.createElement("img")
 defaultGem.setAttribute("src", "./assets/gems/odd/7/7_7.png")
 defaultGem.setAttribute("id", "gems")
 divContainer.appendChild(defaultGem)
+/*line break to spread through code*/
+let lineBreak = document.createElement("br")
 /*div for tasklist*/
 let tasklistDiv = document.createElement("div")
 tasklistDiv.setAttribute("id", "tasklistDiv")
