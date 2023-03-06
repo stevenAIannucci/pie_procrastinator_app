@@ -538,6 +538,13 @@ task1Checked.addEventListener("change", function() {
       addSlice()
     }
 })
+task2Checked.addEventListener("change", function() {
+    if (task2Checked.checked === true) {
+      tasklistDiv.removeChild(task2);
+      tasklistDiv.removeChild(document.getElementById("task2Check"))
+      addSlice()
+    }
+})
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
