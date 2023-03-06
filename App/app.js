@@ -70,7 +70,7 @@ function openPop() {
 /*function to open task list*/
 function openTasklist() {
     let tasklist = document.getElementById("tasklistDiv")
-    tasklist.style.visibility = "block"
+    tasklist.style.visibility = "visible"
 }
 /*function to close task list*/
 function closeTasklist() {
