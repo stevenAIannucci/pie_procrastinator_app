@@ -187,6 +187,16 @@ function removeGem () {
     } else if (gemImg.src.endsWith("/assets/gems/odd/7/7_1.png")) {
         gemImg.src = "./assets/gems/odd/7/7_0.png"
     }
+    /*if starting frame holds 4 gems*/
+    if (gemImg.src.endsWith("/assets/gems/even/2/6_4.png")) {
+        gemImg.src = "./assets/gems/even/2/6_3.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/2/6_3.png")) {
+        gemImg.src = "./assets/gems/even/2/6_2.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/2/6_2.png")) {
+        gemImg.src = "./assets/gems/even/2/6_1.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/2/6_1.png")) {
+        gemImg.src = "./assets/gems/even/2/6_0.png"
+    }
     /*if starting frame holds 7 gems*/
     if (gemImg.src.endsWith("/assets/gems/odd/7/7_7.png")) {
         gemImg.src = "./assets/gems/odd/7/7_6.png"
