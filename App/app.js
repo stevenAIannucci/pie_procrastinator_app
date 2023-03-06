@@ -401,7 +401,7 @@ if (taskNumber === 1) {
     tasklistDiv.appendChild(task2Check)
     appendLineBreak(tasklistDiv)
     appendLineBreak(tasklistDiv)
-    tasklistDiv.appendChild(saveTasklistButton)
+    tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 3) {
     tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
@@ -414,7 +414,7 @@ if (taskNumber === 1) {
     tasklistDiv.appendChild(task3Check)
     appendLineBreak(tasklistDiv)
     appendLineBreak(tasklistDiv)
-    tasklistDiv.appendChild(saveTasklistButton)
+    tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 4) {
     tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
@@ -430,7 +430,7 @@ if (taskNumber === 1) {
     tasklistDiv.appendChild(task4Check)
     appendLineBreak(tasklistDiv)
     appendLineBreak(tasklistDiv)
-    tasklistDiv.appendChild(saveTasklistButton)
+    tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 5) {
     tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
@@ -449,7 +449,7 @@ if (taskNumber === 1) {
     tasklistDiv.appendChild(task5Check)
     appendLineBreak(tasklistDiv)
     appendLineBreak(tasklistDiv)
-    tasklistDiv.appendChild(saveTasklistButton)
+    tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 6) {
     tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
@@ -471,7 +471,7 @@ if (taskNumber === 1) {
     tasklistDiv.appendChild(task6Check)
     appendLineBreak(tasklistDiv)
     appendLineBreak(tasklistDiv)
-    tasklistDiv.appendChild(saveTasklistButton)
+    tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 7) {
     tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
@@ -496,7 +496,7 @@ if (taskNumber === 1) {
     tasklistDiv.appendChild(task7Check)
     appendLineBreak(tasklistDiv)
     appendLineBreak(tasklistDiv)
-    tasklistDiv.appendChild(saveTasklistButton)
+    tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 8) {
     tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
@@ -524,10 +524,9 @@ if (taskNumber === 1) {
     tasklistDiv.appendChild(task8Check)
     appendLineBreak(tasklistDiv)
     appendLineBreak(tasklistDiv)
-    tasklistDiv.appendChild(saveTasklistButton)
+    tasklistContainer.appendChild(saveTasklistButton)
 }
-appendLineBreak(tasklistDiv)
-appendLineBreak(tasklistDiv)
+appendLineBreak(tasklistContainer)
 /*when checkboxes are checked, they are removed from the tasklistDiv and a slice is added to the pie*/
 function onTask1Checked () {
     if (task1Check.checked === true) {
