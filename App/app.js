@@ -36,6 +36,7 @@ let newProjectButtonText = document.createTextNode("New Project")
 newProjectButton.appendChild(newProjectButtonText)
 divContainer.appendChild(newProjectButton)
 /*button to open task list*/
+/*button to close task list*/
 let tasklistButton = document.createElement("button")
 tasklistButton.setAttribute("id", "tasklist")
 tasklistButton.setAttribute("type", "button")
@@ -61,6 +62,7 @@ function openPop() {
     window.open("./popup/popup.html", "Popup", "width=400, height=300")
 }
 /*function to open task list*/
+/*function to close task list*/
 function closeTasklist() {
     let tasklist = document.getElementById("tasklistDiv")
     tasklist.style.visibility = "hidden"
