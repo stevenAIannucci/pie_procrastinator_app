@@ -6,6 +6,8 @@ function activatenewProject() {
     event.preventDefault()
     /*resets values when the ok button is clicked*/
     localStorage.removeItem("pnameOutput")
+    localStorage.removeItem("taskNumber")
+    localStorage.removeItem("daysNumber")
     localStorage.removeItem("currentTask1Input")
     localStorage.removeItem("currentTask2Input")
     localStorage.removeItem("currentTask3Input")
