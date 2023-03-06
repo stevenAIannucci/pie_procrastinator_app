@@ -167,7 +167,7 @@ function addSlice() {
     }
 }
 /*set pie depending on the number input set by the user*/
-const gemImg = document.getElementById("gem")
+const gemImg = document.getElementById("gems")
 const daysnInput = parseInt(localStorage.getItem("daysNumber"))
 const daysNumber = daysnInput
 if (daysNumber === 1) {
