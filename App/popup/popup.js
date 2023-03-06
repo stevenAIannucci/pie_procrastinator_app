@@ -30,6 +30,10 @@ function activatenewProject() {
         pnameOutput.textContent = pnameInput
         localStorage.setItem("pnameOutput", pnameOutput.textContent)
         /*stores taskn in localStorage*/
+        const tasknInput = document.getElementById("taskn")
+        const number = taskn.value
+        localStorage.setItem("taskNumber", number)
+        window.location.href = "./index.html"
         /*stores daysn in localStorage*/
         window.close()
     }
