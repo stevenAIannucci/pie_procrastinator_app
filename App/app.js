@@ -295,6 +295,7 @@ function removeGem () {
     }
 }
 /*set tasklist inputs depending on the taskn input*/
+/*task1*/
 let task1 = document.createElement("input")
 task1.setAttribute("type", "text")
 task1.setAttribute("id", "task1")
@@ -303,6 +304,7 @@ let task1Check = document.createElement("input")
 task1Check.setAttribute("type", "checkbox")
 task1Check.setAttribute("id", "task1Check")
 task1Check.setAttribute("name", "task1Check")
+/*task2*/
 let task2 = document.createElement("input")
 task2.setAttribute("type", "text")
 task2.setAttribute("id", "task2")
@@ -311,36 +313,41 @@ let task2Check = document.createElement("input")
 task2Check.setAttribute("type", "checkbox")
 task2Check.setAttribute("id", "task2Check")
 task2Check.setAttribute("name", "task2Check")
+/*task3*/
 let task3 = document.createElement("input")
 task3.setAttribute("type", "text")
 task3.setAttribute("id", "task3")
 task3.setAttribute("name", "task3")
-
+let task3Check = document.createElement("input")
+task3Check.setAttribute("type", "checkbox")
+task3Check.setAttribute("id", "task3Check")
+task3Check.setAttribute("name", "task3Check")
+/*task4*/
 let task4 = document.createElement("input")
 task4.setAttribute("type", "text")
 task4.setAttribute("id", "task4")
 task4.setAttribute("name", "task4")
-
+/*task5*/
 let task5 = document.createElement("input")
 task5.setAttribute("type", "text")
 task5.setAttribute("id", "task5")
 task5.setAttribute("name", "task5")
-
+/*task6*/
 let task6 = document.createElement("input")
 task6.setAttribute("type", "text")
 task6.setAttribute("id", "task6")
 task6.setAttribute("name", "task6")
-
+/*task7*/
 let task7 = document.createElement("input")
 task7.setAttribute("type", "text")
 task7.setAttribute("id", "task7")
 task7.setAttribute("name", "task7")
-
+/*task8*/
 let task8 = document.createElement("input")
 task8.setAttribute("type", "text")
 task8.setAttribute("id", "task8")
 task8.setAttribute("name", "task8")
-
+/*if statement determines how many tasks are appended to the tasklistDiv*/
 if (taskNumber === 1) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
@@ -350,6 +357,15 @@ if (taskNumber === 1) {
     tasklistDiv.appendChild(lineBreak)
     tasklistDiv.appendChild(task2)
     tasklistDiv.appendChild(task2Check)
+} else if (taskNumber === 3) {
+    tasklistDiv.appendChild(task1)
+    tasklistDiv.appendChild(task1Check)
+    tasklistDiv.appendChild(lineBreak)
+    tasklistDiv.appendChild(task2)
+    tasklistDiv.appendChild(task2Check)
+    tasklistDiv.appendChild(lineBreak)
+    tasklistDiv.appendChild(task3)
+    tasklistDiv.appendChild(task3Check)
 }
 /*initial function*/
 function init() {
