@@ -33,6 +33,20 @@ let lineBreak = document.createElement("br")
 function appendLineBreak(element) {
     element.appendChild(lineBreak.cloneNode()) 
 }
+/*button to start new project*/
+let newProjectButton = document.createElement("button")
+newProjectButton.setAttribute("id", "newProject")
+newProjectButton.setAttribute("type", "button")
+let newProjectButtonText = document.createTextNode("New Project")
+newProjectButton.appendChild(newProjectButtonText)
+divContainer.appendChild(newProjectButton)
+/*button to open and close task list*/
+let tasklistButton = document.createElement("button")
+tasklistButton.setAttribute("id", "tasklistButton")
+tasklistButton.setAttribute("type", "button")
+let tasklistButtonText = document.createTextNode("Open Task List")
+tasklistButton.appendChild(tasklistButtonText)
+divContainer.appendChild(tasklistButton)
 /*div for tasklist*/
 let tasklistDiv = document.createElement("div")
 tasklistDiv.setAttribute("id", "tasklistDiv")
@@ -55,20 +69,6 @@ let saveTasklistButtonText = document.createTextNode("Save")
 saveTasklistButton.appendChild(saveTasklistButtonText)
 /*seperate tasklist and buttons used for testing*/
 appendLineBreak(divContainer)
-/*button to start new project*/
-let newProjectButton = document.createElement("button")
-newProjectButton.setAttribute("id", "newProject")
-newProjectButton.setAttribute("type", "button")
-let newProjectButtonText = document.createTextNode("New Project")
-newProjectButton.appendChild(newProjectButtonText)
-divContainer.appendChild(newProjectButton)
-/*button to open and close task list*/
-let tasklistButton = document.createElement("button")
-tasklistButton.setAttribute("id", "tasklistButton")
-tasklistButton.setAttribute("type", "button")
-let tasklistButtonText = document.createTextNode("Open Task List")
-tasklistButton.appendChild(tasklistButtonText)
-divContainer.appendChild(tasklistButton)
 /*button to remove gem*/
 let removeGemButton = document.createElement("button")
 removeGemButton.setAttribute("id", "removeButton")
