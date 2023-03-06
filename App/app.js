@@ -53,7 +53,6 @@ saveTasklistButton.setAttribute("id", "saveTasklist")
 saveTasklistButton.setAttribute("type", "button")
 let saveTasklistButtonText = document.createTextNode("Save")
 saveTasklistButton.appendChild(saveTasklistButtonText)
-tasklistDiv.appendChild(saveTasklistButton)
 /*seperate tasklist and buttons used for testing*/
 appendLineBreak(divContainer)
 /*button to start new project*/
@@ -383,12 +382,14 @@ task8Check.setAttribute("name", "task8Check")
 if (taskNumber === 1) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
+    tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 2) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(taskListDiv)
     tasklistDiv.appendChild(task2)
     tasklistDiv.appendChild(task2Check)
+    tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 3) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
@@ -398,6 +399,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(task3)
     tasklistDiv.appendChild(task3Check)
+    tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 4) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
@@ -410,6 +412,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(task4)
     tasklistDiv.appendChild(task4Check)
+    tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 5) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
@@ -425,6 +428,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(task5)
     tasklistDiv.appendChild(task5Check)
+    tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 6) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
@@ -443,6 +447,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(task6)
     tasklistDiv.appendChild(task6Check)
+    tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 7) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
@@ -464,6 +469,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(task7)
     tasklistDiv.appendChild(task7Check)
+    tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 8) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
@@ -488,6 +494,9 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(task8)
     tasklistDiv.appendChild(task8Check)
+    appendLineBreak(tasklistDiv)
+    appendLineBreak(tasklistDiv)
+    tasklistDiv.appendChild(saveTasklistButton)
 }
 appendLineBreak(tasklistDiv)
 appendLineBreak(tasklistDiv)
