@@ -170,15 +170,15 @@ function addSlice() {
 function removeGem () {
     const gemImg = document.getElementById("gems")
     /*if starting frame holds 1 gem*/
-    if (gemImg.src.endsWith("/assets/gems/odd/7/1.png")) {
-        gemImg.src = "./assets/gems/odd/7/0.png"
+    if (gemImg.src.endsWith("/assets/gems/odd/7/7_1.png")) {
+        gemImg.src = "./assets/gems/odd/7/7_0.png"
     }
     /*if starting frame holds 7 gems*/
     if (gemImg.src.endsWith("/assets/gems/odd/7/7_7.png")) {
         gemImg.src = "./assets/gems/odd/7/7_6.png"
     } else if (gemImg.src.endsWith("/assets/gems/odd/7/7_6.png")) {
         gemImg.src = "./assets/gems/odd/7/7_5.png"
-    } else if (gemImg.src.endsWith("/assets/gems/even/7/7_5.png")) {
+    } else if (gemImg.src.endsWith("/assets/gems/odd/7/7_5.png")) {
         gemImg.src = "./assets/gems/odd/7/7_4.png"
     } else if (gemImg.src.endsWith("/assets/gems/odd/7/7_4.png")) {
         gemImg.src = "./assets/gems/odd/7/7_3.png"
