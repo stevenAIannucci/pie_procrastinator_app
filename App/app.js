@@ -523,7 +523,7 @@ if (taskNumber === 1) {
 appendLineBreak(tasklistDiv)
 appendLineBreak(tasklistDiv)
 /*when checkboxes are checked, they are removed from the tasklistDiv and a slice is added to the pie*/
-const task1Checked = document.getElementById("task1Check")
+let task1Checked = document.getElementById("task1Check")
 const task2Checked = document.getElementById("task2Check")
 const task3Checked = document.getElementById("task3Check")
 const task4Checked = document.getElementById("task4Check")
