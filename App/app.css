@@ -5,16 +5,15 @@ body {
 h1 {
     text-align: center;
     color: white;
-}
-
-p {
     font-size: 40px;
 }
+
+
 
 #childDiv {
     text-align: center;
     color: red;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #frames {
