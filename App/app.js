@@ -63,7 +63,7 @@ function openPop() {
 /*function to open task list*/
 function closeTasklist() {
     let tasklist = document.getElementById("tasklistDiv")
-    tasklist.style.visibility = "none"
+    tasklist.style.visibility = "hidden"
 }
 /*set pie depending on the number input set by the user*/
 const frameImg = document.getElementById("frames")
@@ -277,8 +277,8 @@ function init() {
     let newProjectButton = document.getElementById("newProject")
     newProjectButton.addEventListener("click", openPop)
     /*opens the tasklist*/
-    let openTasklistButton = document.getElementById("tasklist")
-    openTasklistButton.addEventListener("click", closeTasklist)
+    let closeTasklistButton = document.getElementById("tasklist")
+    closeTasklistButton.addEventListener("click", closeTasklist)
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
