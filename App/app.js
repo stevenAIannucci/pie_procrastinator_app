@@ -537,7 +537,7 @@ function onTask2Checked () {
         tasklistDiv.removeChild(task2Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            tasklistDiv.appendChild(defaultTasklist)
+            defaultTasklist.style.visibility = "visible"
         }
     }
 }
@@ -547,7 +547,7 @@ function onTask3Checked () {
         tasklistDiv.removeChild(task3Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            tasklistDiv.appendChild(defaultTasklist)
+            defaultTasklist.style.visibility = "visible"
         }
     }
 }
@@ -557,7 +557,7 @@ function onTask4Checked () {
         tasklistDiv.removeChild(task4Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            tasklistDiv.appendChild(defaultTasklist)
+            defaultTasklist.style.visibility = "visible"
         }
     }
 }
@@ -567,7 +567,7 @@ function onTask5Checked () {
         tasklistDiv.removeChild(task5Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            tasklistDiv.appendChild(defaultTasklist)
+            defaultTasklist.style.visibility = "visible"
         }
     }
 }
@@ -577,7 +577,7 @@ function onTask6Checked () {
         tasklistDiv.removeChild(task6Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            tasklistDiv.appendChild(defaultTasklist)
+            defaultTasklist.style.visibility = "visible"
         }
     }
 }
@@ -587,7 +587,7 @@ function onTask7Checked () {
         tasklistDiv.removeChild(task7Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            tasklistDiv.appendChild(defaultTasklist)
+            defaultTasklist.style.visibility = "visible"
         }
     }
 }
@@ -597,7 +597,7 @@ function onTask8Checked () {
         tasklistDiv.removeChild(task8Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            tasklistDiv.appendChild(defaultTasklist)
+            defaultTasklist.style.visibility = "visible"
         }
     }
 }
