@@ -523,18 +523,17 @@ if (taskNumber === 1) {
 appendLineBreak(tasklistDiv)
 appendLineBreak(tasklistDiv)
 /*when checkboxes are checked, they are removed from the tasklistDiv and a slice is added to the pie*/
-let task1Checked = document.getElementById("task1Check")
-const task2Checked = document.getElementById("task2Check")
-const task3Checked = document.getElementById("task3Check")
-const task4Checked = document.getElementById("task4Check")
-const task5Checked = document.getElementById("task5Check")
-const task6Checked = document.getElementById("task6Check")
-const task7Checked = document.getElementById("task7Check")
-const task8Checked = document.getElementById("task8Check")
 function onTask1Checked () {
     if (task1Check.checked === true) {
         tasklistDiv.removeChild(task1);
         tasklistDiv.removeChild(task1Check)
+        addSlice()
+    }
+}
+function onTask2Checked () {
+    if (task2Check.checked === true) {
+        tasklistDiv.removeChild(task2);
+        tasklistDiv.removeChild(task2Check)
         addSlice()
     }
 }
@@ -550,6 +549,8 @@ function init() {
     let task1Check = document.getElementById("task1Check")
     task1Check.addEventListener("change", onTask1Checked)
     /*change event fires when task2Check is checked*/
+    let task2Check = document.getElementById("task2Check")
+    task2Check.addEventListener("change", onTask2Checked)
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
