@@ -98,6 +98,18 @@ function addSlice() {
     } else if (frameImg.src.endsWith("/assets/frames/even/4/6.png")) {
         frameImg.src = "./assets/frames/even/4/8.png"
     }
+    /*if pie has 5 slices*/
+    if (frameImg.src.endsWith("/assets/frames/odd/5/0.png")) {
+        frameImg.src = "./assets/frames/odd/5/1.png"
+    } else if (frameImg.src.endsWith("/assets/frames/odd/5/1.png")) {
+        frameImg.src = "./assets/frames/odd/5/2.png"
+    } else if (frameImg.src.endsWith("/assets/frames/odd/5/2.png")) {
+        frameImg.src = "./assets/frames/odd/5/3.png"
+    } else if (frameImg.src.endsWith("/assets/frames/odd/5/3.png")) {
+        frameImg.src = "./assets/frames/odd/5/4.png"
+    } else if (frameImg.src.endsWith("/assets/frames/odd/5/4.png")) {
+        frameImg.src = "./assets/frames/odd/5/5.png"
+    }
     /*if pie has 8 slices*/
     if (frameImg.src.endsWith("/assets/frames/even/8/0.png")) {
         frameImg.src = "./assets/frames/even/8/1.png"
