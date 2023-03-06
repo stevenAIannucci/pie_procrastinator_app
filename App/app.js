@@ -70,11 +70,18 @@ if (taskNumber === 1) {
 /*function to add slice*/
 function addSlice() {
     const frameImg = document.getElementById("frames")
+    /*if pie has 1 slice*/
     if (frameImg.src.endsWith("/assets/frames/odd/1/0.png")) {
         frameImg.src = "./assets/frames/odd/1/8.png"
     }
-
-    /*if (frameImg.src.endsWith("/assets/frames/even/8/0.png")) {
+    /*if pie has 2 slices*/
+    if (frameImg.src.endsWith("/assets/frames/even/2/0.png")) {
+        frameImg.src = "./assets/frames/even/2/4.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/2/4.png")) {
+        frameImg.src = "./assets/frames/even/2/8.png"
+    }
+    /*if pie has 8 slices*/
+    if (frameImg.src.endsWith("/assets/frames/even/8/0.png")) {
         frameImg.src = "./assets/frames/even/8/1.png"
     } else if (frameImg.src.endsWith("/assets/frames/even/8/1.png")) {
         frameImg.src = "./assets/frames/even/8/2.png"
@@ -92,7 +99,7 @@ function addSlice() {
         frameImg.src = "./assets/frames/even/8/8.png"
     } else {
         console.log("No more slices")
-    }*/
+    }
 }
 /*initial function*/
 function init() {
