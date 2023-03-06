@@ -42,6 +42,13 @@ addSliceButton.setAttribute("type", "button")
 let addSliceButtonText = document.createTextNode("Add Slice")
 addSliceButton.appendChild(addSliceButtonText)
 divContainer.appendChild(addSliceButton)
+/*button to remove gem*/
+let removeGemButton = document.createElement("button")
+removeGemButton.setAttribute("id", "removeButton")
+removeGemButton.setAttribute("type", "button")
+let removeGemButtonText = document.createTextNode("Remove Gem")
+removeGemButton.appendChild(removeGemButtonText)
+divContainer.appendChild(removeGemButton)
 /*function to activate popup window*/
 function openPop() {
     window.open("./popup/popup.html", "Popup", "width=400, height=300")
@@ -169,6 +176,7 @@ function init() {
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
+    /*button clicks to remove gems*/
 }
 
 window.addEventListener("load", init, false)
