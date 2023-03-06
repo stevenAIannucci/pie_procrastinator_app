@@ -49,10 +49,10 @@ function activatenewProject() {
                 if (tasknErrorDiv.parentNode.contains(tasknValidateError)) {
                     tasknErrorDiv.parentNode.removeChild(tasknValidateError)
                 }
+                localStorage.setItem("taskNumber", tasknInput)
+                /*stores daysn in localStorage*/
+                window.close()
             }
-            localStorage.setItem("taskNumber", tasknInput)
-            /*stores daysn in localStorage*/
-            window.close()
     }
 }
 
