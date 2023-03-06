@@ -30,18 +30,17 @@ function activatenewProject() {
         pnameOutput.textContent = pnameInput
         localStorage.setItem("pnameOutput", pnameOutput.textContent)
         /*stores taskn in localStorage*/
-        const tasknInput = document.getElementById("taskn")
-        const number = taskn.value
+        let tasknInput = document.getElementById("taskn").value
         const tasknErrorDiv = document.getElementById("tasknErrorDiv")
         tasknErrorDiv.style.color = "red"
         let tasknValidateError = document.getElementById("tasknError")
         if (!tasknValidateError) {
             tasknValidateError = document.createElement("p")
-            tasknValidateError.setAttribute("id", "taskError")
+            tasknValidateError.setAttribute("id", "tasknError")
             const tasknValidateErrorText = document.createTextNode("*You must enter a value between 1-8.")
             tasknValidateError.appendChild(tasknValidateErrorText)
         }
-        if (tasknInput <= 0 && tasknInput >= 9) {
+        if (tasknInput <= 0 || tasknInput >= 9) {
             if (!tasknErrorDiv.parentNode.contains(tasknValidateError)) {
                 tasknErrorDiv.textContent = tasknValidateError.textContent
             }
@@ -51,8 +50,7 @@ function activatenewProject() {
                     tasknErrorDiv.parentNode.removeChild(tasknValidateError)
                 }
             }
-            localStorage.setItem("taskNumber", number)
-            window.location.href = "./index.html"
+            localStorage.setItem("taskNumber", tasknInput)
             /*stores daysn in localStorage*/
             window.close()
     }
