@@ -164,8 +164,6 @@ function addSlice() {
         frameImg.src = "./assets/frames/even/8/7.png"
     } else if (frameImg.src.endsWith("/assets/frames/even/8/7.png")) {
         frameImg.src = "./assets/frames/even/8/8.png"
-    } else {
-        console.log("No more slices")
     }
 }
 /*function to remove gem*/
@@ -173,6 +171,22 @@ function removeGem () {
     const gemImg = document.getElementById("gems")
     /*if starting frame holds 1 gem*/
     if (gemImg.src.endsWith("/assets/gems/odd/7/1.png")) {
+        gemImg.src = "./assets/gems/odd/7/0.png"
+    }
+    /*if starting frame holds 7 gems*/
+    if (gemImg.src.endsWith("/assets/gems/odd/7/7.png")) {
+        gemImg.src = "./assets/gems/odd/7/6.png"
+    } else if (gemImg.src.endsWith("/assets/gems/odd/7/6.png")) {
+        gemImg.src = "./assets/gems/odd/7/5.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/7/5.png")) {
+        gemImg.src = "./assets/gems/odd/7/4.png"
+    } else if (gemImg.src.endsWith("/assets/gems/odd/7/4.png")) {
+        gemImg.src = "./assets/gems/odd/7/3.png"
+    } else if (gemImg.src.endsWith("/assets/gems/odd/7/3.png")) {
+        gemImg.src = "./assets/gems/odd/7/2.png"
+    } else if (gemImg.src.endsWith("/assets/gems/odd/7/2.png")) {
+        gemImg.src = "./assets/gems/odd/7/1.png"
+    } else if (gemImg.src.endsWith("/assets/gems/odd/7/1.png")) {
         gemImg.src = "./assets/gems/odd/7/0.png"
     }
 }
