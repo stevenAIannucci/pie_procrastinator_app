@@ -60,7 +60,7 @@ tasklistContainer.appendChild(tasklisth1)
 /*div for tasklist*/
 let tasklistDiv = document.createElement("div")
 tasklistDiv.setAttribute("id", "tasklistDiv")
-divContainer.appendChild(tasklistDiv)
+tasklistContainer.appendChild(tasklistDiv)
 /*default text in the case of no tasks in tasklistDiv*/
 let defaultTasklist = document.createElement("p")
 let defaultTasklistText = document.createTextNode("There are no tasks that need to be done.")
