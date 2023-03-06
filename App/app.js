@@ -174,8 +174,8 @@ function removeGem () {
         gemImg.src = "./assets/gems/odd/7/0.png"
     }
     /*if starting frame holds 7 gems*/
-    if (gemImg.src.endsWith("/assets/gems/odd/7/7.png")) {
-        gemImg.src = "./assets/gems/odd/7/6.png"
+    if (gemImg.src.endsWith("/assets/gems/odd/7/7_7.png")) {
+        gemImg.src = "./assets/gems/odd/7/7_6.png"
     } else if (gemImg.src.endsWith("/assets/gems/odd/7/6.png")) {
         gemImg.src = "./assets/gems/odd/7/5.png"
     } else if (gemImg.src.endsWith("/assets/gems/even/7/5.png")) {
