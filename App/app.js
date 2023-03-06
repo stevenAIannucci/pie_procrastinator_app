@@ -537,6 +537,48 @@ function onTask2Checked () {
         addSlice()
     }
 }
+function onTask3Checked () {
+    if (task3Check.checked === true) {
+        tasklistDiv.removeChild(task3);
+        tasklistDiv.removeChild(task3Check)
+        addSlice()
+    }
+}
+function onTask4Checked () {
+    if (task4Check.checked === true) {
+        tasklistDiv.removeChild(task4);
+        tasklistDiv.removeChild(task4Check)
+        addSlice()
+    }
+}
+function onTask5Checked () {
+    if (task5Check.checked === true) {
+        tasklistDiv.removeChild(task5);
+        tasklistDiv.removeChild(task5Check)
+        addSlice()
+    }
+}
+function onTask6Checked () {
+    if (task6Check.checked === true) {
+        tasklistDiv.removeChild(task6);
+        tasklistDiv.removeChild(task6Check)
+        addSlice()
+    }
+}
+function onTask7Checked () {
+    if (task7Check.checked === true) {
+        tasklistDiv.removeChild(task7);
+        tasklistDiv.removeChild(task7Check)
+        addSlice()
+    }
+}
+function onTask8Checked () {
+    if (task8Check.checked === true) {
+        tasklistDiv.removeChild(task8);
+        tasklistDiv.removeChild(task8Check)
+        addSlice()
+    }
+}
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
@@ -551,6 +593,24 @@ function init() {
     /*change event fires when task2Check is checked*/
     let task2Check = document.getElementById("task2Check")
     task2Check.addEventListener("change", onTask2Checked)
+    /*change event fires when task3Check is checked*/
+    let task3Check = document.getElementById("task3Check")
+    task3Check.addEventListener("change", onTask3Checked)
+    /*change event fires when task4Check is checked*/
+    let task4Check = document.getElementById("task4Check")
+    task4Check.addEventListener("change", onTask4Checked)
+    /*change event fires when task5Check is checked*/
+    let task5Check = document.getElementById("task5Check")
+    task5Check.addEventListener("change", onTask5Checked)
+    /*change event fires when task6Check is checked*/
+    let task6Check = document.getElementById("task6Check")
+    task6Check.addEventListener("change", onTask6Checked)
+    /*change event fires when task7Check is checked*/
+    let task7Check = document.getElementById("task7Check")
+    task7Check.addEventListener("change", onTask7Checked)
+    /*change event fires when task8Check is checked*/
+    let task8Check = document.getElementById("task8Check")
+    task8Check.addEventListener("change", onTask8Checked)
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
