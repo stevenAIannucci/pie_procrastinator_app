@@ -297,7 +297,10 @@ let task1 = document.createElement("input")
 task1.setAttribute("type", "text")
 task1.setAttribute("id", "task1")
 task1.setAttribute("name", "task1")
-
+let task1Check = document.createElement("input")
+task1.setAttribute("type", "checkbox")
+task1.setAtrribute("id", "task1Check")
+task1.setAttribute("name", "task1Check")
 let task2 = document.createElement("input")
 task2.setAttribute("type", "text")
 task2.setAttribute("id", "task2")
@@ -312,8 +315,30 @@ let task4 = document.createElement("input")
 task4.setAttribute("type", "text")
 task4.setAttribute("id", "task4")
 task4.setAttribute("name", "task4")
+
+let task5 = document.createElement("input")
+task5.setAttribute("type", "text")
+task5.setAttribute("id", "task5")
+task5.setAttribute("name", "task5")
+
+let task6 = document.createElement("input")
+task6.setAttribute("type", "text")
+task6.setAttribute("id", "task6")
+task6.setAttribute("name", "task6")
+
+let task7 = document.createElement("input")
+task7.setAttribute("type", "text")
+task7.setAttribute("id", "task7")
+task7.setAttribute("name", "task7")
+
+let task8 = document.createElement("input")
+task8.setAttribute("type", "text")
+task8.setAttribute("id", "task8")
+task8.setAttribute("name", "task8")
+
 if (taskNumber === 1) {
     tasklistDiv.appendChild(task1)
+    tasklistDiv.appendChild(task1Check)
 } 
 /*initial function*/
 function init() {
