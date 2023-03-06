@@ -110,6 +110,20 @@ function addSlice() {
     } else if (frameImg.src.endsWith("/assets/frames/odd/5/4.png")) {
         frameImg.src = "./assets/frames/odd/5/5.png"
     }
+    /*if pie has 6 slices*/
+    if (frameImg.src.endsWith("/assets/frames/even/6/0.png")) {
+        frameImg.src = "./assets/frames/even/6/1.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/6/1.png")) {
+        frameImg.src = "./assets/frames/even/6/2.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/6/2.png")) {
+        frameImg.src = "./assets/frames/even/6/3.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/6/3.png")) {
+        frameImg.src = "./assets/frames/even/6/4.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/6/4.png")) {
+        frameImg.src = "./assets/frames/even/6/5.png"
+    } else if (frameImg.src.endsWith("/assets/frames/even/6/5.png")) {
+        frameImg.src = "./assets/frames/even/6/6.png"
+    }
     /*if pie has 8 slices*/
     if (frameImg.src.endsWith("/assets/frames/even/8/0.png")) {
         frameImg.src = "./assets/frames/even/8/1.png"
