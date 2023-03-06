@@ -387,6 +387,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 2) {
+    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(taskListDiv)
@@ -396,6 +397,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 3) {
+    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
@@ -408,6 +410,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 4) {
+    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
@@ -423,6 +426,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 5) {
+    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
@@ -441,6 +445,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 6) {
+    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
@@ -462,6 +467,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 7) {
+    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
