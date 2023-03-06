@@ -36,13 +36,19 @@ let newProjectButtonText = document.createTextNode("New Project")
 newProjectButton.appendChild(newProjectButtonText)
 divContainer.appendChild(newProjectButton)
 /*button to open task list*/
+let opentasklistButton = document.createElement("button")
+opentasklistButton.setAttribute("id", "opentasklist")
+opentasklistButton.setAttribute("type", "button")
+let opentasklistButtonText = document.createTextNode("Open Task List")
+opentasklistButton.appendChild(opentasklistButtonText)
+divContainer.appendChild(opentasklistButton)
 /*button to close task list*/
-let tasklistButton = document.createElement("button")
-tasklistButton.setAttribute("id", "tasklist")
-tasklistButton.setAttribute("type", "button")
-let tasklistButtonText = document.createTextNode("Close Task List")
-tasklistButton.appendChild(tasklistButtonText)
-divContainer.appendChild(tasklistButton)
+let closetasklistButton = document.createElement("button")
+closetasklistButton.setAttribute("id", "closetasklist")
+closetasklistButton.setAttribute("type", "button")
+let closetasklistButtonText = document.createTextNode("Close Task List")
+closetasklistButton.appendChild(closetasklistButtonText)
+divContainer.appendChild(closetasklistButton)
 /*button to add slice*/
 let addSliceButton = document.createElement("button")
 addSliceButton.setAttribute("id", "addButton")
@@ -62,6 +68,10 @@ function openPop() {
     window.open("./popup/popup.html", "Popup", "width=400, height=300")
 }
 /*function to open task list*/
+function openTasklist() {
+    let tasklist = document.getElementById("tasklistDiv")
+    tasklist.style.visibility = "block"
+}
 /*function to close task list*/
 function closeTasklist() {
     let tasklist = document.getElementById("tasklistDiv")
@@ -279,7 +289,10 @@ function init() {
     let newProjectButton = document.getElementById("newProject")
     newProjectButton.addEventListener("click", openPop)
     /*opens the tasklist*/
-    let closeTasklistButton = document.getElementById("tasklist")
+    let openTasklistButton = document.getElementById("opentasklist")
+    openTasklistButton.addEventListener("click", openTasklist)
+    /*closes the tasklist*/
+    let closeTasklistButton = document.getElementById("closetasklist")
     closeTasklistButton.addEventListener("click", closeTasklist)
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
