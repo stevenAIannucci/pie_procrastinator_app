@@ -533,6 +533,9 @@ function onTask1Checked () {
         tasklistDiv.removeChild(task1);
         tasklistDiv.removeChild(task1Check)
         addSlice()
+        if (!tasklistDiv.contains(document.querySelector("input"))) {
+            tasklistDiv.appendChild(defaultTasklist)
+        }
     }
 }
 function onTask2Checked () {
@@ -628,9 +631,6 @@ function onSaveTasklist() {
     localStorage.setItem("currentTask8Input", task8.value)
 }
 /*when there are no more tasks in tasklistDiv*/
-if (!tasklistDiv.contains(document.querySelector("input"))) {
-    tasklistDiv.appendChild(defaultTasklist)
-}
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
