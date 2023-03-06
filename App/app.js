@@ -66,10 +66,10 @@ function toggleTasklist() {
     let tasklistButton = document.getElementById("tasklistButton")
     if (tasklist.style.visibility === "hidden") {
         tasklist.style.visibility = "visible"
-        tasklistButton.textContent = "Close Task List"
+        tasklistButton.value = "Close Task List"
     } else {
         tasklist.style.visibility = "hidden"
-        tasklistButton.textContent = "Open Task List"
+        tasklistButton.value = "Open Task List"
     }
 }
 /*set pie depending on the number input set by the user*/
