@@ -51,8 +51,29 @@ function activatenewProject() {
                 }
                 localStorage.setItem("taskNumber", tasknInput)
                 /*stores daysn in localStorage*/
+                let daysnInput = document.getElementById("daysn").value
+                const daysnErrorDiv = document.getElementById("daysnErrorDiv")
+                daysnErrorDiv.style.color = "red"
+                let daysnValidateError = document.getElementById("daysnError")
+                if (!daysnValidateError) {
+                    daysnValidateError = document.createElement("p")
+                    daysnValidateError.setAttribute("id", "daysnError")
+                    const daysnValidateErrorText = document.createTextNode("*You must enter a value between 1-7.")
+                    daysnValidateError.appendChild(daysnValidateErrorText)
+                }
+                if (daysnInput <= 0 || daysnInput >= 8) {
+                    if (!daysnErrorDiv.parentNode.contains(daysnValidateError)) {
+                    daysnErrorDiv.textContent = daysnValidateError.textContent
+                }
+                daysn.style.borderColor = "red"
+                } else {
+                    if (daysnErrorDiv.parentNode.contains(daysnValidateError)) {
+                    daysnErrorDiv.parentNode.removeChild(daysnValidateError)
+                    }
+                localStorage.setItem("daysNumber", daysnInput)
                 window.close()
             }
+        }
     }
 }
 
