@@ -64,7 +64,7 @@ tasklistContainer.appendChild(tasklistDiv)
 /*default text in the case of no tasks in tasklistDiv*/
 let defaultTasklist = document.createElement("p")
 defaultTasklist.style.visibility = "hidden"
-let defaultTasklistText = document.createTextNode("There are no tasks that need to be done.")
+let defaultTasklistText = document.createTextNode("There are no more tasks that need to be done.")
 defaultTasklist.appendChild(defaultTasklistText)
 tasklistDiv.appendChild(defaultTasklist)
 /*button to save input in tasklistDiv by the user*/
