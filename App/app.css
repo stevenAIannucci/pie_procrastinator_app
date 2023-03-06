@@ -39,6 +39,13 @@ h1 {
     z-index: 2;
 }
 
+#tasklistDiv {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    color: white;
+}
+
 button {
     display: block;
     margin-left: auto;
