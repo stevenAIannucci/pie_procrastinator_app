@@ -1,5 +1,5 @@
 /*make task list with inputs that match the number given from taskNumber*/
-const taskNumber = 8
+/*const taskNumber = 8
 const tasklist = document.getElementById("tasklist")
 if (taskNumber === 8) {
     let task1 = document.createElement("input")
@@ -22,4 +22,4 @@ if (taskNumber === 8) {
     task2Input.setAttribute("id", "task2Input")
     task2Input.setAttribute("name", "task2Input")
     tasklist.appendChild(task2Input)
-}
+}*/
