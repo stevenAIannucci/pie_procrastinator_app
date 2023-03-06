@@ -47,6 +47,26 @@ function openPop() {
     window.open("./popup/popup.html", "Popup", "width=400, height=300")
 }
 /*set pie depending on the number input set by the user*/
+const frameImg = document.getElementById("frames")
+const number = parseInt(localStorage.getItem("taskNumber"))
+const taskNumber = number
+if (number === 1) {
+    frameImg.src = "./assets/frames/odd/1/0.png"
+} else if (number === 2) {
+    frameImg.src = "./assets/frames/even/2/0.png"
+} else if (number === 3) {
+    frameImg.src = "./assets/frames/odd/3/0.png"
+} else if (number === 4) {
+    frameImg.src = "./assets/frames/even/4/0.png"
+} else if (number === 5) {
+    frameImg.src = "./assets/frames/odd/5/0.png"
+} else if (number === 6) {
+    frameImg.src = "./assets/frames/even/6/0.png"
+} else if (number === 7) {
+    frameImg.src = "./assets/frames/odd/7/0.png"
+} else if (number === 8) {
+    frameImg.src = "./assets/frames/even/8/0.png"
+}
 /*function to add slice*/
 function addSlice() {
     const frameImg = document.getElementById("frames")
