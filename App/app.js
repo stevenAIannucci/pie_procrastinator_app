@@ -574,11 +574,46 @@ function onTask8Checked () {
 }
 /*function that saves the current state of the task list*/
 const savedTask1Input = localStorage.getItem("currentTask1Input")
+const savedTask2Input = localStorage.getItem("currentTask2Input")
+const savedTask3Input = localStorage.getItem("currentTask3Input")
+const savedTask4Input = localStorage.getItem("currentTask4Input")
+const savedTask5Input = localStorage.getItem("currentTask5Input")
+const savedTask6Input = localStorage.getItem("currentTask6Input")
+const savedTask7Input = localStorage.getItem("currentTask7Input")
+const savedTask8Input = localStorage.getItem("currentTask8Input")
 if (savedTask1Input) {
     task1.value = savedTask1Input
 }
+if (savedTask2Input) {
+    task2.value = savedTask2Input
+}
+if (savedTask3Input) {
+    task3.value = savedTask3Input
+}
+if (savedTask4Input) {
+    task4.value = savedTask4Input
+}
+if (savedTask5Input) {
+    task5.value = savedTask5Input
+}
+if (savedTask6Input) {
+    task6.value = savedTask6Input
+}
+if (savedTask7Input) {
+    task7.value = savedTask7Input
+}
+if (savedTask8Input) {
+    task8.value = savedTask8Input
+}
 function onSaveTasklist() {
     localStorage.setItem("currentTask1Input", task1.value)
+    localStorage.setItem("currentTask2Input", task2.value)
+    localStorage.setItem("currentTask3Input", task3.value)
+    localStorage.setItem("currentTask4Input", task4.value)
+    localStorage.setItem("currentTask5Input", task5.value)
+    localStorage.setItem("currentTask6Input", task6.value)
+    localStorage.setItem("currentTask7Input", task7.value)
+    localStorage.setItem("currentTask8Input", task8.value)
 }
 /*initial function*/
 function init() {
