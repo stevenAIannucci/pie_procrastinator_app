@@ -37,7 +37,7 @@ newProjectButton.appendChild(newProjectButtonText)
 divContainer.appendChild(newProjectButton)
 /*button to open and close task list*/
 let tasklistButton = document.createElement("button")
-tasklistButton.setAttribute("id", "tasklist")
+tasklistButton.setAttribute("id", "tasklistButton")
 tasklistButton.setAttribute("type", "button")
 let tasklistButtonText = document.createTextNode("Open Task List")
 tasklistButton.appendChild(tasklistButtonText)
@@ -66,10 +66,10 @@ function toggleTasklist() {
     let tasklistButton = document.getElementById("tasklistButton")
     if (tasklist.style.visibility === "hidden") {
         tasklist.style.visibility = "visible"
-        tasklistButton.value = "Close Task List"
+        tasklistButton.textContent = "Close Task List"
     } else {
         tasklist.style.visibility = "hidden"
-        tasklistButton.value = "Open Task List"
+        tasklistButton.textContent = "Open Task List"
     }
 }
 /*set pie depending on the number input set by the user*/
