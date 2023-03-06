@@ -391,7 +391,7 @@ if (taskNumber === 1) {
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
     appendLineBreak(tasklistDiv)
-    tasklistDiv.appendChild(saveTasklistButton)
+    tasklistContainer.appendChild(saveTasklistButton)
 } else if (taskNumber === 2) {
     tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
