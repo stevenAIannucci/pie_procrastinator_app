@@ -35,20 +35,13 @@ newProjectButton.setAttribute("type", "button")
 let newProjectButtonText = document.createTextNode("New Project")
 newProjectButton.appendChild(newProjectButtonText)
 divContainer.appendChild(newProjectButton)
-/*button to open task list*/
-let opentasklistButton = document.createElement("button")
-opentasklistButton.setAttribute("id", "opentasklist")
-opentasklistButton.setAttribute("type", "button")
-let opentasklistButtonText = document.createTextNode("Open Task List")
-opentasklistButton.appendChild(opentasklistButtonText)
-divContainer.appendChild(opentasklistButton)
-/*button to close task list*/
-let closetasklistButton = document.createElement("button")
-closetasklistButton.setAttribute("id", "closetasklist")
-closetasklistButton.setAttribute("type", "button")
-let closetasklistButtonText = document.createTextNode("Close Task List")
-closetasklistButton.appendChild(closetasklistButtonText)
-divContainer.appendChild(closetasklistButton)
+/*button to open and close task list*/
+let tasklistButton = document.createElement("button")
+tasklistButton.setAttribute("id", "opentasklist")
+tasklistButton.setAttribute("type", "button")
+let tasklistButtonText = document.createTextNode("Open Task List")
+tasklistButton.appendChild(tasklistButtonText)
+divContainer.appendChild(tasklistButton)
 /*button to add slice*/
 let addSliceButton = document.createElement("button")
 addSliceButton.setAttribute("id", "addButton")
@@ -71,11 +64,17 @@ function openPop() {
 function openTasklist() {
     let tasklist = document.getElementById("tasklistDiv")
     tasklist.style.visibility = "visible"
+    let tasklistButton = document.getElementById("tasklistButton")
+    tasklistButton.textContent = "Close Task List"
+    tasklistButton.id = "closetasklist"
 }
 /*function to close task list*/
 function closeTasklist() {
     let tasklist = document.getElementById("tasklistDiv")
     tasklist.style.visibility = "hidden"
+    let tasklistButton = document.getElementById("tasklistButton")
+    tasklistButton.textContent = "Open Task List"
+    tasklistButton.id = "opentasklist"
 }
 /*set pie depending on the number input set by the user*/
 const frameImg = document.getElementById("frames")

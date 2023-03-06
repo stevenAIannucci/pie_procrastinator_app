@@ -49,6 +49,7 @@ h1 {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
+    visibility: hidden;
 }
 
 button {
