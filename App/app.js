@@ -169,6 +169,13 @@ function addSlice() {
     }
 }
 /*function to remove gem*/
+function removeGem () {
+    const gemImg = document.getElementById("gems")
+    /*if starting frame holds 1 gem*/
+    if (gemImg.src.endsWith("/assets/gems/odd/7/1.png")) {
+        gemImg.src = "./assets/gems/odd/7/0.png"
+    }
+}
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
@@ -179,7 +186,7 @@ function init() {
     addSliceButton.addEventListener("click", addSlice)
     /*button clicks to remove gems*/
     let removeGemButton = document.getElementById("removeButton")
-    //removeGemButton.addEventListener("click", removeGem)
+    removeGemButton.addEventListener("click", removeGem)
 }
 
 window.addEventListener("load", init, false)
