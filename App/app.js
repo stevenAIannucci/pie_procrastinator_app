@@ -651,7 +651,9 @@ function onSaveTasklist() {
     localStorage.setItem("currentTask7Input", task7.value)
     localStorage.setItem("currentTask8Input", task8.value)
 }
-/*when there are no more tasks in tasklistDiv*/
+/*saves the current state of the pie*/
+/*saves the current state of the gems*/
+/*saves the current state of the tasklist*/
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
