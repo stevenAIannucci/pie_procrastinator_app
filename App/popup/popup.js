@@ -6,6 +6,14 @@ function activatenewProject() {
     event.preventDefault()
     /*resets values when the ok button is clicked*/
     localStorage.removeItem("pnameOutput")
+    localStorage.removeItem("currentTask1Input")
+    localStorage.removeItem("currentTask2Input")
+    localStorage.removeItem("currentTask3Input")
+    localStorage.removeItem("currentTask4Input")
+    localStorage.removeItem("currentTask5Input")
+    localStorage.removeItem("currentTask6Input")
+    localStorage.removeItem("currentTask7Input")
+    localStorage.removeItem("currentTask8Input")
     /*validates and stores pname in localStorage*/
     let pnameInput = document.getElementById("pname").value
     const pnameErrorDiv = document.getElementById("pnameErrorDiv")
