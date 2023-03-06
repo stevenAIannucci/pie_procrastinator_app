@@ -47,6 +47,13 @@ let defaultTasklist = document.createElement("p")
 let defaultTasklistText = document.createTextNode("There are no tasks that need to be done.")
 defaultTasklist.appendChild(defaultTasklistText)
 tasklistDiv.appendChild(defaultTasklist)
+/*button to save input in tasklistDiv by the user*/
+let saveTasklistButton = document.createElement("button")
+saveTasklistButton.setAttribute("id", "saveTasklist")
+saveTasklistButton.setAttribute("type", "button")
+let saveTasklistButtonText = document.createTextNode("Save")
+saveTasklistButton.appendChild(saveTasklistButtonText)
+tasklistDiv.appendChild(saveTasklistButton)
 /*seperate tasklist and buttons used for testing*/
 appendLineBreak(divContainer)
 /*button to start new project*/
