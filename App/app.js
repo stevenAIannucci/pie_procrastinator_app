@@ -297,6 +297,21 @@ let task1 = document.createElement("input")
 task1.setAttribute("type", "text")
 task1.setAttribute("id", "task1")
 task1.setAttribute("name", "task1")
+
+let task2 = document.createElement("input")
+task2.setAttribute("type", "text")
+task2.setAttribute("id", "task2")
+task2.setAttribute("name", "task2")
+
+let task3 = document.createElement("input")
+task3.setAttribute("type", "text")
+task3.setAttribute("id", "task3")
+task3.setAttribute("name", "task3")
+
+let task4 = document.createElement("input")
+task4.setAttribute("type", "text")
+task4.setAttribute("id", "task4")
+task4.setAttribute("name", "task4")
 if (taskNumber === 1) {
     tasklistDiv.appendChild(task1)
 } 
