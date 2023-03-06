@@ -532,7 +532,7 @@ const task6Checked = document.getElementById("task6Check")
 const task7Checked = document.getElementById("task7Check")
 const task8Checked = document.getElementById("task8Check")
 if (task1Checked.checked === "true") {
-    addSlice()
+    tasklistDiv.removeChild(task1)
 }
 /*initial function*/
 function init() {
