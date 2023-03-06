@@ -337,8 +337,8 @@ task8.setAttribute("id", "task8")
 task8.setAttribute("name", "task8")
 
 if (taskNumber === 1) {
-    tasklistDiv.appendChild(task1Check)
     tasklistDiv.appendChild(task1)
+    tasklistDiv.appendChild(task1Check)
 } 
 /*initial function*/
 function init() {
