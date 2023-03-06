@@ -357,16 +357,16 @@ if (taskNumber === 1) {
 } else if (taskNumber === 2) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
-    tasklistDiv.appendChild(lineBreak)
+    appendLineBreak(taskListDiv)
     tasklistDiv.appendChild(task2)
     tasklistDiv.appendChild(task2Check)
 } else if (taskNumber === 3) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
-    tasklistDiv.appendChild(lineBreak)
+    appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(task2)
     tasklistDiv.appendChild(task2Check)
-    tasklistDiv.appendChild(lineBreak)
+    appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(task3)
     tasklistDiv.appendChild(task3Check)
 }
