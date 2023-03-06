@@ -37,7 +37,7 @@ newProjectButton.appendChild(newProjectButtonText)
 divContainer.appendChild(newProjectButton)
 /*button to open and close task list*/
 let tasklistButton = document.createElement("button")
-tasklistButton.setAttribute("id", "opentasklist")
+tasklistButton.setAttribute("id", "tasklist")
 tasklistButton.setAttribute("type", "button")
 let tasklistButtonText = document.createTextNode("Open Task List")
 tasklistButton.appendChild(tasklistButtonText)
@@ -60,21 +60,17 @@ divContainer.appendChild(removeGemButton)
 function openPop() {
     window.open("./popup/popup.html", "Popup", "width=400, height=300")
 }
-/*function to open task list*/
-function openTasklist() {
+/*function to open and close task list*/
+function toggleTasklist() {
     let tasklist = document.getElementById("tasklistDiv")
-    tasklist.style.visibility = "visible"
     let tasklistButton = document.getElementById("tasklistButton")
-    tasklistButton.textContent = "Close Task List"
-    tasklistButton.id = "closetasklist"
-}
-/*function to close task list*/
-function closeTasklist() {
-    let tasklist = document.getElementById("tasklistDiv")
-    tasklist.style.visibility = "hidden"
-    let tasklistButton = document.getElementById("tasklistButton")
-    tasklistButton.textContent = "Open Task List"
-    tasklistButton.id = "opentasklist"
+    if (tasklist.style.visibility === "hidden") {
+        tasklist.style.visibility = "visible"
+        tasklistButton.textContent = "Close Task List"
+    } else {
+        tasklist.style.visibility = "hidden"
+        tasklistButton.textContent = "Open Task List"
+    }
 }
 /*set pie depending on the number input set by the user*/
 const frameImg = document.getElementById("frames")
@@ -287,12 +283,9 @@ function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
     let newProjectButton = document.getElementById("newProject")
     newProjectButton.addEventListener("click", openPop)
-    /*opens the tasklist*/
-    let openTasklistButton = document.getElementById("opentasklist")
-    openTasklistButton.addEventListener("click", openTasklist)
-    /*closes the tasklist*/
-    let closeTasklistButton = document.getElementById("closetasklist")
-    closeTasklistButton.addEventListener("click", closeTasklist)
+    /*opens and closes the tasklist*/
+    let toggleTasklistButton = document.getElementById("tasklist")
+    toggleTasklistButton.addEventListener("click", toggleTasklist)
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
