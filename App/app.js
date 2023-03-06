@@ -26,7 +26,7 @@ divContainer.appendChild(defaultPie)
 /*default gem set image*/
 let defaultGem = document.createElement("img")
 defaultGem.setAttribute("src", "./assets/gems/odd/7/7_7.png")
-defaultGem.setAttribute("class", "gems")
+defaultGem.setAttribute("id", "gems")
 divContainer.appendChild(defaultGem)
 /*button to start new project*/
 let newProjectButton = document.createElement("button")
@@ -168,6 +168,7 @@ function addSlice() {
         console.log("No more slices")
     }
 }
+/*function to remove gem*/
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
@@ -177,6 +178,8 @@ function init() {
     let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
     /*button clicks to remove gems*/
+    let removeGemButton = document.getElementById("removeButton")
+    //removeGemButton.addEventListener("click", removeGem)
 }
 
 window.addEventListener("load", init, false)
