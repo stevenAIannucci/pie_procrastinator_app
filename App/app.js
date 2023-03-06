@@ -347,6 +347,7 @@ if (taskNumber === 1) {
 } else if (taskNumber === 2) {
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
+    tasklistDiv.appendChild(lineBreak)
     tasklistDiv.appendChild(task2)
     tasklistDiv.appendChild(task2Check)
 }
