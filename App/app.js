@@ -535,6 +535,7 @@ task1Checked.addEventListener("change", function() {
     if (task1Checked.checked === true) {
       tasklistDiv.removeChild(task1);
       tasklistDiv.removeChild(document.getElementById("task1Check"))
+      addSlice()
     }
 })
 /*initial function*/
