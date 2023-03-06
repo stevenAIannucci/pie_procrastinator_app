@@ -292,6 +292,14 @@ function removeGem () {
         gemImg.src = "./assets/gems/odd/7/7_0.png"
     }
 }
+/*set tasklist inputs depending on the taskn input*/
+let task1 = document.createElement("input")
+task1.setAttribute("type", "text")
+task1.setAttribute("id", "task1")
+task1.setAttribute("name", "task1")
+if (taskNumber === 1) {
+    tasklistDiv.appendChild(task1)
+} 
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
