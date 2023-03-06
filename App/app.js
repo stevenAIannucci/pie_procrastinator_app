@@ -380,6 +380,7 @@ task8Check.setAttribute("id", "task8Check")
 task8Check.setAttribute("name", "task8Check")
 /*if statement determines how many tasks are appended to the tasklistDiv*/
 if (taskNumber === 1) {
+    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
@@ -485,6 +486,7 @@ if (taskNumber === 1) {
     appendLineBreak(tasklistDiv)
     tasklistDiv.appendChild(saveTasklistButton)
 } else if (taskNumber === 8) {
+    tasklistDiv.removeChild(defaultTasklist)
     tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
     appendLineBreak(tasklistDiv)
