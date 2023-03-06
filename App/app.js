@@ -572,6 +572,14 @@ function onTask8Checked () {
         addSlice()
     }
 }
+/*function that saves the current state of the task list*/
+const savedTask1Input = localStorage.getItem("currentTask1Input")
+if (savedTask1Input) {
+    task1.value = savedTask1Input
+}
+function onSaveTasklist() {
+    localStorage.setItem("currentTask1Input", task1.value)
+}
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
@@ -604,6 +612,9 @@ function init() {
     /*change event fires when task8Check is checked*/
     let task8Check = document.getElementById("task8Check")
     task8Check.addEventListener("change", onTask8Checked)
+    /*saves the current state of the task list*/
+    let saveTasklistButton = document.getElementById("saveTasklist")
+    saveTasklistButton.addEventListener("input", onSaveTasklist)
     /*button clicks to remove gems*/
     let removeGemButton = document.getElementById("removeButton")
     removeGemButton.addEventListener("click", removeGem)
