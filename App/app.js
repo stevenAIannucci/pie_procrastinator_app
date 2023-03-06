@@ -35,6 +35,13 @@ newProjectButton.setAttribute("type", "button")
 let newProjectButtonText = document.createTextNode("New Project")
 newProjectButton.appendChild(newProjectButtonText)
 divContainer.appendChild(newProjectButton)
+/*button to open task list*/
+let tasklistButton = document.createElement("button")
+tasklistButton.setAttribute("id", "tasklist")
+tasklistButton.setAttribute("type", "button")
+let tasklistButtonText = document.createTextNode("Open Task List")
+tasklistButton.appendChild(tasklistButtonText)
+divContainer.appendChild(tasklistButton)
 /*button to add slice*/
 let addSliceButton = document.createElement("button")
 addSliceButton.setAttribute("id", "addButton")
@@ -52,6 +59,10 @@ divContainer.appendChild(removeGemButton)
 /*function to activate popup window*/
 function openPop() {
     window.open("./popup/popup.html", "Popup", "width=400, height=300")
+}
+/*function to open task list*/
+function openTasklist() {
+    window.open("./tasklist/tasklist.html", "Tasklist", "width=400, height=300")
 }
 /*set pie depending on the number input set by the user*/
 const frameImg = document.getElementById("frames")
@@ -264,6 +275,9 @@ function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
     let newProjectButton = document.getElementById("newProject")
     newProjectButton.addEventListener("click", openPop)
+    /*opens the tasklist*/
+    let openTasklistButton = document.getElementById("tasklist")
+    openTasklistButton.addEventListener("click", openTasklist)
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
