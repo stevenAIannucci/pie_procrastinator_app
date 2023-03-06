@@ -526,7 +526,7 @@ function onTask1Checked () {
         tasklistDiv.removeChild(task1Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            defaultTasklist.style.visibility = "visible"
+            defaultTasklist.textContent = "There are no more tasks that need to be done."
         }
     }
 }
