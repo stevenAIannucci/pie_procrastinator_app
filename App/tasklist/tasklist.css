@@ -1,0 +1,42 @@
+body {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+#popupContainer {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    padding: 25px;
+}
+
+/*#pname {
+    border-style: solid;
+    border-width: 1px;
+}
+
+#taskn {
+    width: 1.5em;
+}
+
+#daysn {
+    width: 1.5em;
+}*/
+
+#ok {
+    background-color: grey;
+    color: lightgreen;
+}
+
+#cancel {
+    background-color: grey;
+    color:white;
+}
