@@ -39,7 +39,7 @@ divContainer.appendChild(newProjectButton)
 let tasklistButton = document.createElement("button")
 tasklistButton.setAttribute("id", "tasklist")
 tasklistButton.setAttribute("type", "button")
-let tasklistButtonText = document.createTextNode("Open Task List")
+let tasklistButtonText = document.createTextNode("Close Task List")
 tasklistButton.appendChild(tasklistButtonText)
 divContainer.appendChild(tasklistButton)
 /*button to add slice*/
