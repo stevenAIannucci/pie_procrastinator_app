@@ -180,48 +180,48 @@ function removeGem () {
         gemImg.src = "./assets/gems/even/2/6_0.png"
     }
     /*if starting frame holds 3 gems*/
-    if (gemImg.src.endsWith("/assets/gems/odd/7/7_3.png")) {
-        gemImg.src = "./assets/gems/odd/7/7_2.png"
-    } else if (gemImg.src.endsWith("/assets/gems/odd/7/7_2.png")) {
-        gemImg.src = "./assets/gems/odd/7/7_1.png"
-    } else if (gemImg.src.endsWith("/assets/gems/odd/7/7_1.png")) {
-        gemImg.src = "./assets/gems/odd/7/7_0.png"
+    if (gemImg.src.endsWith("/assets/gems/odd/3/7_3.png")) {
+        gemImg.src = "./assets/gems/odd/3/7_2.png"
+    } else if (gemImg.src.endsWith("/assets/gems/odd/3/7_2.png")) {
+        gemImg.src = "./assets/gems/odd/3/7_1.png"
+    } else if (gemImg.src.endsWith("/assets/gems/odd/3/7_1.png")) {
+        gemImg.src = "./assets/gems/odd/3/7_0.png"
     }
     /*if starting frame holds 4 gems*/
-    if (gemImg.src.endsWith("/assets/gems/even/2/6_4.png")) {
-        gemImg.src = "./assets/gems/even/2/6_3.png"
-    } else if (gemImg.src.endsWith("/assets/gems/even/2/6_3.png")) {
-        gemImg.src = "./assets/gems/even/2/6_2.png"
-    } else if (gemImg.src.endsWith("/assets/gems/even/2/6_2.png")) {
-        gemImg.src = "./assets/gems/even/2/6_1.png"
-    } else if (gemImg.src.endsWith("/assets/gems/even/2/6_1.png")) {
-        gemImg.src = "./assets/gems/even/2/6_0.png"
+    if (gemImg.src.endsWith("/assets/gems/even/4/6_4.png")) {
+        gemImg.src = "./assets/gems/even/4/6_3.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/4/6_3.png")) {
+        gemImg.src = "./assets/gems/even/4/6_2.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/4/6_2.png")) {
+        gemImg.src = "./assets/gems/even/4/6_1.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/4/6_1.png")) {
+        gemImg.src = "./assets/gems/even/4/6_0.png"
     }
     /*if starting frame holds 5 gems*/
-    if (gemImg.src.endsWith("/assets/gems/odd/7/7_5.png")) {
-        gemImg.src = "./assets/gems/odd/7/7_4.png"
-    } else if (gemImg.src.endsWith("/assets/gems/odd/7/7_4.png")) {
-        gemImg.src = "./assets/gems/odd/7/7_3.png"
-    } else if (gemImg.src.endsWith("/assets/gems/odd/7/7_3.png")) {
-        gemImg.src = "./assets/gems/odd/7/7_2.png"
-    } else if (gemImg.src.endsWith("/assets/gems/odd/7/7_2.png")) {
-        gemImg.src = "./assets/gems/odd/7/7_1.png"
-    } else if (gemImg.src.endsWith("/assets/gems/odd/7/7_1.png")) {
-        gemImg.src = "./assets/gems/odd/7/7_0.png"
+    if (gemImg.src.endsWith("/assets/gems/odd/5/7_5.png")) {
+        gemImg.src = "./assets/gems/odd/5/7_4.png"
+    } else if (gemImg.src.endsWith("/assets/gems/odd/5/7_4.png")) {
+        gemImg.src = "./assets/gems/odd/5/7_3.png"
+    } else if (gemImg.src.endsWith("/assets/gems/odd/5/7_3.png")) {
+        gemImg.src = "./assets/gems/odd/5/7_2.png"
+    } else if (gemImg.src.endsWith("/assets/gems/odd/5/7_2.png")) {
+        gemImg.src = "./assets/gems/odd/5/7_1.png"
+    } else if (gemImg.src.endsWith("/assets/gems/odd/5/7_1.png")) {
+        gemImg.src = "./assets/gems/odd/5/7_0.png"
     }
     /*if starting frame holds 6 gems*/
-    if (gemImg.src.endsWith("/assets/gems/even/2/6_6.png")) {
-        gemImg.src = "./assets/gems/even/2/6_5.png"
-    } else if (gemImg.src.endsWith("/assets/gems/even/2/6_5.png")) {
-        gemImg.src = "./assets/gems/even/2/6_4.png"
-    } else if (gemImg.src.endsWith("/assets/gems/even/2/6_4.png")) {
-        gemImg.src = "./assets/gems/even/2/6_3.png"
-    } else if (gemImg.src.endsWith("/assets/gems/even/2/6_3.png")) {
-        gemImg.src = "./assets/gems/even/2/6_2.png"
-    } else if (gemImg.src.endsWith("/assets/gems/even/2/6_2.png")) {
-        gemImg.src = "./assets/gems/even/2/6_1.png"
-    } else if (gemImg.src.endsWith("/assets/gems/even/2/6_1.png")) {
-        gemImg.src = "./assets/gems/even/2/6_0.png"
+    if (gemImg.src.endsWith("/assets/gems/even/6/6_6.png")) {
+        gemImg.src = "./assets/gems/even/6/6_5.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/6/6_5.png")) {
+        gemImg.src = "./assets/gems/even/6/6_4.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/6/6_4.png")) {
+        gemImg.src = "./assets/gems/even/6/6_3.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/6/6_3.png")) {
+        gemImg.src = "./assets/gems/even/6/6_2.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/6/6_2.png")) {
+        gemImg.src = "./assets/gems/even/6/6_1.png"
+    } else if (gemImg.src.endsWith("/assets/gems/even/6/6_1.png")) {
+        gemImg.src = "./assets/gems/even/6/6_0.png"
     }
     /*if starting frame holds 7 gems*/
     if (gemImg.src.endsWith("/assets/gems/odd/7/7_7.png")) {
