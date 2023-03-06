@@ -5,7 +5,7 @@ appTitle.appendChild(appTitleText)
 /*div*/
 let divContainer = document.getElementById("containerDiv")
 divContainer.appendChild(appTitle)
-/*childDiv*/
+/*div to display Project Name*/
 let childDiv = document.createElement("div")
 childDiv.setAttribute("id", "childDiv")
 divContainer.appendChild(childDiv)
@@ -28,6 +28,10 @@ let defaultGem = document.createElement("img")
 defaultGem.setAttribute("src", "./assets/gems/odd/7/7_7.png")
 defaultGem.setAttribute("id", "gems")
 divContainer.appendChild(defaultGem)
+/*div for tasklist*/
+let tasklistDiv = document.createElement("div")
+tasklistDiv.setAttribute("id", "tasklistDiv")
+divContainer.appendChild(tasklistDiv)
 /*button to start new project*/
 let newProjectButton = document.createElement("button")
 newProjectButton.setAttribute("id", "newProject")
