@@ -284,7 +284,7 @@ function init() {
     let newProjectButton = document.getElementById("newProject")
     newProjectButton.addEventListener("click", openPop)
     /*opens and closes the tasklist*/
-    let toggleTasklistButton = document.getElementById("tasklist")
+    let toggleTasklistButton = document.getElementById("tasklistButton")
     toggleTasklistButton.addEventListener("click", toggleTasklist)
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
