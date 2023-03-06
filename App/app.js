@@ -37,6 +37,11 @@ let tasklisth1 = document.createElement("h1")
 let tasklisth1Text = document.createTextNode("Task List")
 tasklisth1.appendChild(tasklisth1Text)
 tasklistDiv.appendChild(tasklisth1)
+/*default text in the case of no tasks in tasklistDiv*/
+let defaultTasklist = document.createElement("p")
+let defaultTasklistText = document.createTextNode("There's nothing here.")
+defaultTasklist.appendChild(defaultTasklistText)
+tasklistDiv.appendChild(defaultTasklist)
 /*button to start new project*/
 let newProjectButton = document.createElement("button")
 newProjectButton.setAttribute("id", "newProject")
