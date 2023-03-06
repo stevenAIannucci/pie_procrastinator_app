@@ -32,6 +32,15 @@ function activatenewProject() {
         /*stores taskn in localStorage*/
         const tasknInput = document.getElementById("taskn")
         const number = taskn.value
+        const tasknErrorDiv = document.getElementById("tasknErrorDiv")
+        tasknErrorDiv.style.color = "red"
+        let tasknValidateError = document.getElementById("tasknError")
+        if (number <= 0 && number >= 9) {
+            tasknValidateError = document.createElement("p")
+            tasknValidateError.setAttribute("id", "pnameError")
+            const tasknValidateErrorText = document.createTextNode("*You can't leave this field blank.")
+            pnameValidateError.appendChild(pnameValidateErrorText)
+        }
         localStorage.setItem("taskNumber", number)
         window.location.href = "./index.html"
         /*stores daysn in localStorage*/
