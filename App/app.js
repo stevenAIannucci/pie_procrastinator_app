@@ -87,7 +87,7 @@ function openPop() {
 }
 /*function to open and close task list*/
 function toggleTasklist() {
-    let tasklist = document.getElementById("tasklistDiv")
+    let tasklist = document.getElementById("tasklistContainer")
     let tasklistButton = document.getElementById("tasklistButton")
     if (tasklist.style.visibility === "hidden") {
         tasklist.style.visibility = "visible"
