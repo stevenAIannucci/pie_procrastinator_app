@@ -32,6 +32,11 @@ divContainer.appendChild(defaultGem)
 let tasklistDiv = document.createElement("div")
 tasklistDiv.setAttribute("id", "tasklistDiv")
 divContainer.appendChild(tasklistDiv)
+/*h1 for Task List in tasklistDiv*/
+let tasklisth1 = document.createElement("h1")
+let tasklisth1Text = document.createTextNode("Task List")
+tasklisth1.appendChild(tasklisth1Text)
+tasklistDiv.appendChild(tasklisth1)
 /*button to start new project*/
 let newProjectButton = document.createElement("button")
 newProjectButton.setAttribute("id", "newProject")
