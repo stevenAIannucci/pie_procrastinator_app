@@ -628,7 +628,7 @@ function onSaveTasklist() {
     localStorage.setItem("currentTask8Input", task8.value)
 }
 /*when there are no more tasks in tasklistDiv*/
-if (!tasklistDiv.contains(tasklistDiv.querySelector("input"))) {
+if (!tasklistDiv.contains(document.querySelector("input"))) {
     tasklistDiv.appendChild(defaultTasklist)
 }
 /*initial function*/
