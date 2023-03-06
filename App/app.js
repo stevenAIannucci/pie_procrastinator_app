@@ -39,7 +39,7 @@ tasklisth1.appendChild(tasklisth1Text)
 tasklistDiv.appendChild(tasklisth1)
 /*default text in the case of no tasks in tasklistDiv*/
 let defaultTasklist = document.createElement("p")
-let defaultTasklistText = document.createTextNode("There's nothing here.")
+let defaultTasklistText = document.createTextNode("There are no tasks that need to be done.")
 defaultTasklist.appendChild(defaultTasklistText)
 tasklistDiv.appendChild(defaultTasklist)
 /*button to start new project*/
