@@ -47,6 +47,7 @@ tasklistButton.setAttribute("type", "button")
 let tasklistButtonText = document.createTextNode("Open Task List")
 tasklistButton.appendChild(tasklistButtonText)
 divContainer.appendChild(tasklistButton)
+appendLineBreak(divContainer)
 /*div for tasklist*/
 let tasklistDiv = document.createElement("div")
 tasklistDiv.setAttribute("id", "tasklistDiv")
