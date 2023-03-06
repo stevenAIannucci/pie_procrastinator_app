@@ -522,6 +522,15 @@ if (taskNumber === 1) {
 }
 appendLineBreak(tasklistDiv)
 appendLineBreak(tasklistDiv)
+/*when checkboxes are checked, they are removed from the tasklistDiv and a slice is added to the pie*/
+const task1Checked = document.getElementById("task1Check")
+const task2Checked = document.getElementById("task2Check")
+const task3Checked = document.getElementById("task3Check")
+const task4Checked = document.getElementById("task4Check")
+const task5Checked = document.getElementById("task5Check")
+const task6Checked = document.getElementById("task6Check")
+const task7Checked = document.getElementById("task7Check")
+const task8Checked = document.getElementById("task8Check")
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
