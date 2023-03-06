@@ -48,15 +48,19 @@ let tasklistButtonText = document.createTextNode("Open Task List")
 tasklistButton.appendChild(tasklistButtonText)
 divContainer.appendChild(tasklistButton)
 appendLineBreak(divContainer)
-/*div for tasklist*/
-let tasklistDiv = document.createElement("div")
-tasklistDiv.setAttribute("id", "tasklistDiv")
-divContainer.appendChild(tasklistDiv)
+/*container div for tasklist*/
+let tasklistContainer = document.createElement("div")
+tasklistDiv.setAttribute("id", "tasklistContainer")
+divContainer.appendChild(tasklistContainer)
 /*h1 for Task List in tasklistDiv*/
 let tasklisth1 = document.createElement("h1")
 let tasklisth1Text = document.createTextNode("Task List")
 tasklisth1.appendChild(tasklisth1Text)
-tasklistDiv.appendChild(tasklisth1)
+tasklistContainer.appendChild(tasklisth1)
+/*div for tasklist*/
+let tasklistDiv = document.createElement("div")
+tasklistDiv.setAttribute("id", "tasklistDiv")
+divContainer.appendChild(tasklistDiv)
 /*default text in the case of no tasks in tasklistDiv*/
 let defaultTasklist = document.createElement("p")
 let defaultTasklistText = document.createTextNode("There are no tasks that need to be done.")
