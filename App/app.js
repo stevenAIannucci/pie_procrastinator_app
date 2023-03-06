@@ -48,7 +48,7 @@ function openPop() {
 }
 /*set pie depending on the number input set by the user*/
 const frameImg = document.getElementById("frames")
-const number = parseInt(localStorage.getItem("taskNumber"))
+const tasknInput = parseInt(localStorage.getItem("taskNumber"))
 const taskNumber = number
 if (number === 1) {
     frameImg.src = "./assets/frames/odd/1/0.png"
