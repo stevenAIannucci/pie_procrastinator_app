@@ -614,7 +614,7 @@ function init() {
     task8Check.addEventListener("change", onTask8Checked)
     /*saves the current state of the task list*/
     let saveTasklistButton = document.getElementById("saveTasklist")
-    saveTasklistButton.addEventListener("input", onSaveTasklist)
+    saveTasklistButton.addEventListener("click", onSaveTasklist)
     /*button clicks to remove gems*/
     let removeGemButton = document.getElementById("removeButton")
     removeGemButton.addEventListener("click", removeGem)
