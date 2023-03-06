@@ -531,20 +531,13 @@ const task5Checked = document.getElementById("task5Check")
 const task6Checked = document.getElementById("task6Check")
 const task7Checked = document.getElementById("task7Check")
 const task8Checked = document.getElementById("task8Check")
-task1Checked.addEventListener("change", function() {
+function task1Checked () {
     if (task1Checked.checked === true) {
-      tasklistDiv.removeChild(task1);
-      tasklistDiv.removeChild(document.getElementById("task1Check"))
-      addSlice()
+        tasklistDiv.removeChild(task1);
+        tasklistDiv.removeChild(document.getElementById("task1Check"))
+        addSlice()
     }
-})
-task2Checked.addEventListener("change", function() {
-    if (task2Checked.checked === true) {
-      tasklistDiv.removeChild(task2);
-      tasklistDiv.removeChild(document.getElementById("task2Check"))
-      addSlice()
-    }
-})
+}
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
@@ -553,6 +546,9 @@ function init() {
     /*opens and closes the tasklist*/
     let toggleTasklistButton = document.getElementById("tasklistButton")
     toggleTasklistButton.addEventListener("click", toggleTasklist)
+    /*change event fires when task1Check is checked*/
+    let task1Check = document.getElementById("task1Check")
+    task1Check.addEventListener("change", task1Checked)
     /*button clicks to add slices*/
     let addSliceButton = document.getElementById("addButton")
     addSliceButton.addEventListener("click", addSlice)
