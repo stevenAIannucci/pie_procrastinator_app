@@ -69,13 +69,6 @@ tasklistButton.setAttribute("type", "button")
 let tasklistButtonText = document.createTextNode("Open Task List")
 tasklistButton.appendChild(tasklistButtonText)
 divContainer.appendChild(tasklistButton)
-/*button to add slice*/
-let addSliceButton = document.createElement("button")
-addSliceButton.setAttribute("id", "addButton")
-addSliceButton.setAttribute("type", "button")
-let addSliceButtonText = document.createTextNode("Add Slice")
-addSliceButton.appendChild(addSliceButtonText)
-divContainer.appendChild(addSliceButton)
 /*button to remove gem*/
 let removeGemButton = document.createElement("button")
 removeGemButton.setAttribute("id", "removeButton")
@@ -611,9 +604,6 @@ function init() {
     /*change event fires when task8Check is checked*/
     let task8Check = document.getElementById("task8Check")
     task8Check.addEventListener("change", onTask8Checked)
-    /*button clicks to add slices*/
-    let addSliceButton = document.getElementById("addButton")
-    addSliceButton.addEventListener("click", addSlice)
     /*button clicks to remove gems*/
     let removeGemButton = document.getElementById("removeButton")
     removeGemButton.addEventListener("click", removeGem)
