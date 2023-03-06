@@ -299,7 +299,7 @@ task1.setAttribute("id", "task1")
 task1.setAttribute("name", "task1")
 let task1Check = document.createElement("input")
 task1Check.setAttribute("type", "checkbox")
-task1Check.setAttrribute("id", "task1Check")
+task1Check.setAttribute("id", "task1Check")
 task1Check.setAttribute("name", "task1Check")
 let task2 = document.createElement("input")
 task2.setAttribute("type", "text")
@@ -337,8 +337,8 @@ task8.setAttribute("id", "task8")
 task8.setAttribute("name", "task8")
 
 if (taskNumber === 1) {
-    tasklistDiv.appendChild(task1)
     tasklistDiv.appendChild(task1Check)
+    tasklistDiv.appendChild(task1)
 } 
 /*initial function*/
 function init() {
