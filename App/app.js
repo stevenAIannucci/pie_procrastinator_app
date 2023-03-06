@@ -536,7 +536,7 @@ function onTask2Checked () {
         tasklistDiv.removeChild(task2Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            defaultTasklist.style.visibility = "visible"
+            defaultTasklist.textContent = "There are no more tasks that need to be done."
         }
     }
 }
@@ -546,7 +546,7 @@ function onTask3Checked () {
         tasklistDiv.removeChild(task3Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            defaultTasklist.style.visibility = "visible"
+            defaultTasklist.textContent = "There are no more tasks that need to be done."
         }
     }
 }
@@ -556,7 +556,7 @@ function onTask4Checked () {
         tasklistDiv.removeChild(task4Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            defaultTasklist.style.visibility = "visible"
+            defaultTasklist.textContent = "There are no more tasks that need to be done."
         }
     }
 }
@@ -566,7 +566,7 @@ function onTask5Checked () {
         tasklistDiv.removeChild(task5Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            defaultTasklist.style.visibility = "visible"
+            defaultTasklist.textContent = "There are no more tasks that need to be done."
         }
     }
 }
@@ -576,7 +576,7 @@ function onTask6Checked () {
         tasklistDiv.removeChild(task6Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            defaultTasklist.style.visibility = "visible"
+            defaultTasklist.textContent = "There are no more tasks that need to be done."
         }
     }
 }
@@ -586,7 +586,7 @@ function onTask7Checked () {
         tasklistDiv.removeChild(task7Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            defaultTasklist.style.visibility = "visible"
+            defaultTasklist.textContent = "There are no more tasks that need to be done."
         }
     }
 }
@@ -596,7 +596,7 @@ function onTask8Checked () {
         tasklistDiv.removeChild(task8Check)
         addSlice()
         if (!tasklistDiv.contains(document.querySelector("input"))) {
-            defaultTasklist.style.visibility = "visible"
+            defaultTasklist.textContent = "There are no more tasks that need to be done."
         }
     }
 }
