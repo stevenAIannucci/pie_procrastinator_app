@@ -166,6 +166,25 @@ function addSlice() {
         frameImg.src = "./assets/frames/even/8/8.png"
     }
 }
+/*set pie depending on the number input set by the user*/
+const gemImg = document.getElementById("gem")
+const daysnInput = parseInt(localStorage.getItem("daysNumber"))
+const daysNumber = daysnInput
+if (daysNumber === 1) {
+    gemImg.src = "./assets/gems/odd/1/7_1.png"
+} else if (daysNumber === 2) {
+    gemImg.src = "./assets/gems/even/2/6_2.png"
+} else if (daysNumber === 3) {
+    gemImg.src = "./assets/gems/odd/3/7_3.png"
+} else if (daysNumber === 4) {
+    gemImg.src = "./assets/gems/even/4/6_4.png"
+} else if (daysNumber === 5) {
+    gemImg.src = "./assets/gems/odd/5/7_5.png"
+} else if (daysNumber === 6) {
+    gemImg.src = "./assets/gems/even/6/6_6.png"
+} else if (daysNumber === 7) {
+    gemImg.src = "./assets/gems/odd/7/7_7.png"
+}
 /*function to remove gem*/
 function removeGem () {
     const gemImg = document.getElementById("gems")
