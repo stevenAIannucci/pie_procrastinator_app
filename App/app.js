@@ -543,6 +543,9 @@ function onTask2Checked () {
         tasklistDiv.removeChild(task2);
         tasklistDiv.removeChild(task2Check)
         addSlice()
+        if (!tasklistDiv.contains(document.querySelector("input"))) {
+            tasklistDiv.appendChild(defaultTasklist)
+        }
     }
 }
 function onTask3Checked () {
@@ -550,6 +553,9 @@ function onTask3Checked () {
         tasklistDiv.removeChild(task3);
         tasklistDiv.removeChild(task3Check)
         addSlice()
+        if (!tasklistDiv.contains(document.querySelector("input"))) {
+            tasklistDiv.appendChild(defaultTasklist)
+        }
     }
 }
 function onTask4Checked () {
@@ -557,6 +563,9 @@ function onTask4Checked () {
         tasklistDiv.removeChild(task4);
         tasklistDiv.removeChild(task4Check)
         addSlice()
+        if (!tasklistDiv.contains(document.querySelector("input"))) {
+            tasklistDiv.appendChild(defaultTasklist)
+        }
     }
 }
 function onTask5Checked () {
@@ -564,6 +573,9 @@ function onTask5Checked () {
         tasklistDiv.removeChild(task5);
         tasklistDiv.removeChild(task5Check)
         addSlice()
+        if (!tasklistDiv.contains(document.querySelector("input"))) {
+            tasklistDiv.appendChild(defaultTasklist)
+        }
     }
 }
 function onTask6Checked () {
@@ -571,6 +583,9 @@ function onTask6Checked () {
         tasklistDiv.removeChild(task6);
         tasklistDiv.removeChild(task6Check)
         addSlice()
+        if (!tasklistDiv.contains(document.querySelector("input"))) {
+            tasklistDiv.appendChild(defaultTasklist)
+        }
     }
 }
 function onTask7Checked () {
@@ -578,6 +593,9 @@ function onTask7Checked () {
         tasklistDiv.removeChild(task7);
         tasklistDiv.removeChild(task7Check)
         addSlice()
+        if (!tasklistDiv.contains(document.querySelector("input"))) {
+            tasklistDiv.appendChild(defaultTasklist)
+        }
     }
 }
 function onTask8Checked () {
@@ -585,6 +603,9 @@ function onTask8Checked () {
         tasklistDiv.removeChild(task8);
         tasklistDiv.removeChild(task8Check)
         addSlice()
+        if (!tasklistDiv.contains(document.querySelector("input"))) {
+            tasklistDiv.appendChild(defaultTasklist)
+        }
     }
 }
 /*function that saves the current state of the task list*/
