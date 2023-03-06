@@ -40,12 +40,15 @@ h1 {
 }
 
 #tasklistDiv {
+    display: block;
     text-align: center;
     border-style: solid;
     border-width: 1px;
     border-color: white;
     color: white;
     width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button {
