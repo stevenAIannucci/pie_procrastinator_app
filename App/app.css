@@ -30,7 +30,7 @@ h1 {
     display: block;
     position: fixed;
     /*65*/
-    top: 33%;
+    top: 32%;
     /*right: 710*/
     left: 50%;
     transform: translate(-50%, -50%);
