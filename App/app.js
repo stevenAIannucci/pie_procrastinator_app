@@ -310,6 +310,8 @@ task1.setAttribute("type", "text")
 task1.setAttribute("id", "task1")
 task1.setAttribute("name", "task1")
 task1.setAttribute("placeholder", "Task 1")
+task1.setAttribute("oninput", "this.value = this.value.slice(0, 40)")
+task1.setAttribute("maxlength", "40")
 task1.style.width = "300px"
 let task1Check = document.createElement("input")
 task1Check.setAttribute("type", "checkbox")
