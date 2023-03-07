@@ -654,16 +654,6 @@ function onSaveTasklist() {
 /*saves the current state of the pie*/
 /*saves the current state of the gems*/
 /*saves the current state of the tasklist*/
-tasklistContainer.addEventListener("input", () => {
-    const tasklistContainerContent = tasklistContainer.outerHTML
-    localStorage.setItem("currentTasklistContainer", tasklistContainerContent)
-})
-window.addEventListener("load", () => {
-    const savedTasklistContainer = localStorage.getItem("currentTasklistContainer")
-    if (savedTasklistContainer) {
-        tasklistContainer.outerHTML = savedTasklistContainer
-    }
-})
 /*initial function*/
 function init() {
     /*prompt the user for a task name, numbers of tasks, and days until deadline*/
