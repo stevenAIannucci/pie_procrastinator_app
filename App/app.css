@@ -58,6 +58,13 @@ button {
     margin-right: auto;
 }
 
+#removeButton {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 #saveTasklist {
     background-color: grey;
     color: lightgreen;
